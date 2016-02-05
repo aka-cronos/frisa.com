@@ -1,0 +1,111 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+* {
+  background-color: rgba();
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Bold.eot") format('eot'), url("/fonts/NeoSansStd-Bold.woff") format('woff'), url("/fonts/NeoSansStd-Bold.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Bold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Medium.eot") format('eot'), url("/fonts/NeoSansStd-Medium.woff") format('woff'), url("/fonts/NeoSansStd-Medium.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Medium") format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Regular.eot") format('eot'), url("/fonts/NeoSansStd-Regular.woff") format('woff'), url("/fonts/NeoSansStd-Regular.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Regular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Light.eot") format('eot'), url("/fonts/NeoSansStd-Light.woff") format('woff'), url("/fonts/NeoSansStd-Light.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Light") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'NeoSans', sans-serif;
+  font-size: 16px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.wrapped {
+  padding-left: calc(50% - (1120px / 2));
+  padding-right: calc(50% - (1120px / 2));
+}
+
+/* BASIC GRID */
+@media (min-width: 60rem) {
+  .col { float: left;}
+  .col.full { width: 100%; }
+  .col.two-thirds { width: 66.7%; }
+  .col.half { width: 50%; }
+  .col.third { width: 33.3%; }
+  .col.fourth { width: 25%; }
+  .col.three-fourth { width: 75%;}
+  .col.fifth { width: 20%; }
+  .col.sixth { width: 16.6%; }
+  .col.flow-opposite { float: right; }
+}
+
+.title_small {
+}
+
+
+/* INDUSTRIES */
+.homeIndustry {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.homeIndustry-section {
+  width: calc(33.3% - 1rem);
+  padding: 1rem;
+  display: block;
+  float: left;
+  background-color: tomato;
+  margin: .5rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .homeIndustry-section {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .homeIndustry-section {
+    width: calc(100% - 1rem);
+  }
+}
+
+.homeIndustry-info {
+ display: none;
+}
+
+
+
