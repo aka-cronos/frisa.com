@@ -1,0 +1,373 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  font-size: 16px;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure img {
+  display: block;
+  width: 100%;
+}
+.text {
+  color: #7c7c7c;
+  line-height: 1.75;
+}
+.title {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ce181e;
+}
+.title--small {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.title--white {
+  color: #fff;
+}
+.title--grey {
+  color: #7c7c7c;
+}
+.title__slider {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.mainHeader {
+  width: 100%;
+  border-top: 3px solid #7c7c7c;
+  background-color: rgba(206,24,30,0.9);
+  *zoom: 1;
+  padding-left: calc(50% - (1120px / 2));
+  padding-right: calc(50% - (1120px / 2));
+  z-index: 9999;
+}
+.mainHeader:before {
+  content: '';
+  display: table;
+}
+.mainHeader:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.mainHeader--body {
+  position: fixed;
+}
+@media only screen and (max-width: 1120px) {
+  .mainHeader {
+    padding-left: calc(50% - (95% / 2));
+    padding-right: calc(50% - (95% / 2));
+  }
+}
+.mainHeader__logo,
+.efrisa-logo {
+  display: block;
+  float: left;
+  width: 76px;
+}
+.mainHeader__logo img,
+.efrisa-logo img {
+  display: block;
+  width: 100%;
+}
+.mainNav {
+  float: left;
+  margin-left: 100px;
+}
+.mainNav__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mainNav__menu-item {
+  position: relative;
+  float: left;
+  margin-right: 1em;
+  margin-left: 1em;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 99px;
+}
+.mainNav__menu-item:first-child {
+  margin-left: 0;
+}
+.mainNav__menu-item:hover .mainNav__dropdown {
+  display: block;
+}
+.mainNav__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: none;
+  padding: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 220px;
+  background-color: rgba(255,255,255,0.9);
+  list-style: none;
+}
+.mainNav__dropdown li {
+  padding: 0.5em 1.5em;
+  border-bottom: 1px solid #bebebe;
+}
+.mainNav__dropdown li:hover {
+  background-color: #bebebe;
+}
+.mainNav__dropdown li:last-child {
+  border-bottom: 0;
+}
+.mainNav__dropdown a {
+  color: #414141;
+  display: block;
+  text-decoration: none;
+}
+.mainNav__link {
+  position: relative;
+  padding: 2.5em 0.5em;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.mainNav__link:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  content: '';
+  transition: 350ms all ease;
+}
+.mainNav__link:hover:before {
+  height: 4px;
+  content: '';
+}
+.mainNav-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 99px;
+}
+.search {
+  display: none;
+}
+.btn {
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn--small {
+  font-size: 0.75em;
+  padding: 0.5em;
+  font-weight: 600;
+}
+.btn--red {
+  background-color: #960a0f;
+}
+.btn--white {
+  color: #960a0f;
+  background-color: #fff;
+}
+.btn--lang {
+  color: #fff;
+  margin-left: 1.5rem;
+  background-color: #960a0f;
+}
