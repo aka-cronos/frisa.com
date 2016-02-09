@@ -178,9 +178,8 @@ th {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Lato', sans-serif;
+  font-family: 'NeoSans', sans-serif;
   text-rendering: optimizeLegibility;
-  font-weight: 400;
   font-size: 16px;
 }
 *,
@@ -188,38 +187,41 @@ body {
 :after {
   box-sizing: border-box;
 }
-figure {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Bold.eot") format('eot'), url("/fonts/NeoSansStd-Bold.woff") format('woff'), url("/fonts/NeoSansStd-Bold.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Bold") format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
-figure img {
-  display: block;
-  width: 100%;
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Medium.eot") format('eot'), url("/fonts/NeoSansStd-Medium.woff") format('woff'), url("/fonts/NeoSansStd-Medium.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Medium") format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Regular.eot") format('eot'), url("/fonts/NeoSansStd-Regular.woff") format('woff'), url("/fonts/NeoSansStd-Regular.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Regular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url("/fonts/NeoSansStd-Light.eot") format('eot'), url("/fonts/NeoSansStd-Light.woff") format('woff'), url("/fonts/NeoSansStd-Light.ttf") format('truetype'), url("/fonts/NeoSansStd-Light.svg#NeoSansStd-Light") format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 .text {
   color: #7c7c7c;
   line-height: 1.75;
 }
-.title {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
-  font-size: 2rem;
-  color: #ce181e;
-}
-.title--small {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-.title--white {
-  color: #fff;
-}
-.title--grey {
+.title,
+.sectionHeader-title,
+.sectionHeader-subtitle {
   color: #7c7c7c;
-}
-.title__slider {
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.125;
+  font-weight: 400;
 }
 .mainHeader {
   width: 100%;
@@ -228,7 +230,6 @@ figure img {
   *zoom: 1;
   padding-left: calc(50% - (1120px / 2));
   padding-right: calc(50% - (1120px / 2));
-  z-index: 9999;
 }
 .mainHeader:before {
   content: '';
@@ -248,27 +249,66 @@ figure img {
     padding-right: calc(50% - (95% / 2));
   }
 }
-.mainHeader__logo,
-.efrisa-logo {
-  display: block;
-  float: left;
-  width: 76px;
+.sectionHeader {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 90px;
+  min-height: 400px;
+  height: 40vh;
+  text-align: center;
 }
-.mainHeader__logo img,
-.efrisa-logo img {
-  display: block;
-  width: 100%;
+@media only screen and (max-width: 800px) {
+  .sectionHeader {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
 }
-.mainNav {
-  float: left;
-  margin-left: 100px;
+.sectionHeader-title,
+.sectionHeader-subtitle {
+  color: #fff;
 }
-.mainNav__menu {
+.sectionHeader-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.sectionHeader-subtitle {
+  margin: 0;
+}
+.sectionHeader-industries {
+  background: url("/img/sectionHeader-industries.jpg") center no-repeat;
+  background-size: cover;
+}
+.mainNav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 1120px) {
+  .mainNav {
+    display: none;
+  }
+}
+.mainNav-menu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.mainNav-menu {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.mainNav__menu-item {
+.mainNav-menuItem {
   position: relative;
   float: left;
   margin-right: 1em;
@@ -281,13 +321,13 @@ figure img {
   display: flex;
   height: 99px;
 }
-.mainNav__menu-item:first-child {
+.mainNav-menuItem:first-child {
   margin-left: 0;
 }
-.mainNav__menu-item:hover .mainNav__dropdown {
+.mainNav-menuItem:hover .mainNav-dropdown {
   display: block;
 }
-.mainNav__dropdown {
+.mainNav-dropdown {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -295,33 +335,33 @@ figure img {
   padding: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  min-width: 220px;
+  min-width: 230px;
   background-color: rgba(255,255,255,0.9);
   list-style: none;
 }
-.mainNav__dropdown li {
+.mainNav-dropdown li {
   padding: 0.5em 1.5em;
   border-bottom: 1px solid #bebebe;
 }
-.mainNav__dropdown li:hover {
+.mainNav-dropdown li:hover {
   background-color: #bebebe;
 }
-.mainNav__dropdown li:last-child {
+.mainNav-dropdown li:last-child {
   border-bottom: 0;
 }
-.mainNav__dropdown a {
+.mainNav-dropdown a {
   color: #414141;
   display: block;
   text-decoration: none;
 }
-.mainNav__link {
+.mainNav-link {
   position: relative;
   padding: 2.5em 0.5em;
   display: block;
   color: #fff;
   text-decoration: none;
 }
-.mainNav__link:before {
+.mainNav-link:before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -332,7 +372,7 @@ figure img {
   content: '';
   transition: 350ms all ease;
 }
-.mainNav__link:hover:before {
+.mainNav-link:hover:before {
   height: 4px;
   content: '';
 }
@@ -345,6 +385,11 @@ figure img {
       -ms-flex-align: center;
           align-items: center;
   height: 99px;
+}
+@media only screen and (max-width: 1120px) {
+  .mainNav-actions {
+    display: none;
+  }
 }
 .search {
   display: none;
@@ -370,4 +415,17 @@ figure img {
   color: #fff;
   margin-left: 1.5rem;
   background-color: #960a0f;
+}
+.mainLogo {
+  float: left;
+}
+.mainLogo,
+.efrisaLogo {
+  display: block;
+  width: 76px;
+}
+.mainLogo img,
+.efrisaLogo img {
+  display: block;
+  width: 100%;
 }

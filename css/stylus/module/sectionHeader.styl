@@ -1,0 +1,28 @@
+.sectionHeader
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  padding-top 90px
+  min-height 400px
+  height 40vh
+  text-align center
+  
+  +below(800px)
+    wrapped(90%)
+  
+  &-title
+  &-subtitle
+    @extend .title
+    color white
+    
+  &-title
+    margin-top 0
+    margin-bottom 1rem
+    
+  &-subtitle
+    margin 0
+    
+  &-industries
+    background url('/img/sectionHeader-industries.jpg') center no-repeat
+    background-size cover
