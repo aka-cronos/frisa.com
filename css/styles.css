@@ -429,3 +429,347 @@ body {
   display: block;
   width: 100%;
 }
+.logoFooter {
+  display: block;
+  margin-bottom: 2rem;
+  max-width: 100px;
+}
+.logoFooter img {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .logoFooter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.sectionPreview-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.sectionPreview-container {
+  padding-left: calc(50% - (1120px / 2));
+  padding-right: calc(50% - (1120px / 2));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.sectionPreview {
+  width: calc(99.99% * 1/3 - (16px - 16px * 1/3));
+  height: calc(99.99% * 1/3 - (16px - 16px * 1/3));
+  position: relative;
+  min-height: 200px;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+}
+.sectionPreview:nth-child(1n) {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  clear: none;
+}
+.sectionPreview:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.sectionPreview:nth-child(3n) {
+  margin-right: 0;
+}
+.sectionPreview:nth-child(3n) {
+  float: right;
+}
+.sectionPreview:nth-child(3n + 1) {
+  clear: left;
+}
+.sectionPreview:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 800px) {
+  .sectionPreview {
+    width: calc(99.99% * 1/2 - (16px - 16px * 1/2));
+    height: calc(99.99% * 1/2 - (16px - 16px * 1/2));
+  }
+  .sectionPreview:nth-child(1n) {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    clear: none;
+  }
+  .sectionPreview:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .sectionPreview:nth-child(2n) {
+    margin-right: 0;
+  }
+  .sectionPreview:nth-child(2n) {
+    float: right;
+  }
+  .sectionPreview:nth-child(2n + 1) {
+    clear: left;
+  }
+  .sectionPreview:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sectionPreview {
+    width: calc(99.99% * 1 - (16px - 16px * 1));
+    height: calc(99.99% * 1 - (16px - 16px * 1));
+  }
+  .sectionPreview:nth-child(1n) {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    clear: none;
+  }
+  .sectionPreview:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .sectionPreview:nth-child(undefinedn) {
+    margin-right: 0;
+  }
+  .sectionPreview:nth-child(undefinedn) {
+    float: right;
+  }
+  .sectionPreview:nth-child(undefinedn + 1) {
+    clear: left;
+  }
+  .sectionPreview:nth-last-child(-n + undefined) {
+    margin-bottom: 0;
+  }
+}
+.sectionPreview-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(206,24,30,0);
+  transition: 300ms all ease-in-out;
+}
+.sectionPreview-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.sectionPreview-description {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.sectionPreview:hover .sectionPreview-info {
+  background-color: #ce181e;
+}
+.sectionPreview:hover .sectionPreview-description {
+  display: block;
+}
+.sectionPreview.aerospace {
+  background: url("/img/industries/aerospace-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.constructionandmining {
+  background: url("/img/industries/constructionandmining-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.industrialmachinery {
+  background: url("/img/industries/industrialmachinery-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.oilandgas {
+  background: url("/img/industries/oilandgas-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.powergeneration {
+  background: url("/img/industries/powergeneration-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.windpower {
+  background: url("/img/industries/windpower-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+footer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #414141;
+  color: #fff;
+}
+footer p {
+  margin-top: 0;
+}
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  padding-left: calc(50% - (920px / 2));
+  padding-right: calc(50% - (920px / 2));
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+    text-align: center;
+  }
+}
+.social,
+.footerLinks {
+  width: calc(99.99% * 2/10 - (16px - 16px * 2/10));
+}
+.social:nth-child(1n),
+.footerLinks:nth-child(1n) {
+  float: left;
+  margin-right: 16px;
+  clear: none;
+}
+.social:last-child,
+.footerLinks:last-child {
+  margin-right: 0;
+}
+.social:nth-child(0n),
+.footerLinks:nth-child(0n) {
+  float: right;
+}
+.social:nth-child(0n),
+.footerLinks:nth-child(0n) {
+  margin-right: 0;
+}
+.social:nth-child(0n + 1),
+.footerLinks:nth-child(0n + 1) {
+  clear: left;
+}
+@media only screen and (max-width: 600px) {
+  .social,
+  .footerLinks {
+    width: calc(99.99% * 1 - (16px - 16px * 1));
+    margin-bottom: 2rem;
+  }
+  .social:nth-child(1n),
+  .footerLinks:nth-child(1n) {
+    float: left;
+    margin-right: 16px;
+    clear: none;
+  }
+  .social:last-child,
+  .footerLinks:last-child {
+    margin-right: 0;
+  }
+  .social:nth-child(0n),
+  .footerLinks:nth-child(0n) {
+    float: right;
+  }
+  .social:nth-child(0n),
+  .footerLinks:nth-child(0n) {
+    margin-right: 0;
+  }
+  .social:nth-child(0n + 1),
+  .footerLinks:nth-child(0n + 1) {
+    clear: left;
+  }
+}
+.contactInfo {
+  width: calc(99.99% * 6/10 - (16px - 16px * 6/10));
+}
+.contactInfo:nth-child(1n) {
+  float: left;
+  margin-right: 16px;
+  clear: none;
+}
+.contactInfo:last-child {
+  margin-right: 0;
+}
+.contactInfo:nth-child(0n) {
+  float: right;
+}
+.contactInfo:nth-child(0n) {
+  margin-right: 0;
+}
+.contactInfo:nth-child(0n + 1) {
+  clear: left;
+}
+@media only screen and (max-width: 600px) {
+  .contactInfo {
+    width: calc(99.99% * 1 - (16px - 16px * 1));
+  }
+  .contactInfo:nth-child(1n) {
+    float: left;
+    margin-right: 16px;
+    clear: none;
+  }
+  .contactInfo:last-child {
+    margin-right: 0;
+  }
+  .contactInfo:nth-child(0n) {
+    float: right;
+  }
+  .contactInfo:nth-child(0n) {
+    margin-right: 0;
+  }
+  .contactInfo:nth-child(0n + 1) {
+    clear: left;
+  }
+}
+.social a {
+  text-decoration: none;
+}
+.social-icon {
+  display: inline-block;
+}
+.contactInfo span {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+.footerLinks a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .footerLinks {
+    display: none;
+  }
+}
+.legals {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #7c7c7c;
+  text-align: center;
+}
+.legals-item {
+  font-size: 0.75rem;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.separator {
+  display: inline-block;
+  width: 1px;
+  height: 0.75rem;
+  background-color: #fff;
+}
