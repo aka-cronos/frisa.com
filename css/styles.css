@@ -439,8 +439,8 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .logoFooter {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 .sectionPreview-container:after {
@@ -772,4 +772,24 @@ footer p {
   width: 1px;
   height: 0.75rem;
   background-color: #fff;
+}
+.subNav {
+  padding-left: calc(50% - (1120px / 2));
+  padding-right: calc(50% - (1120px / 2));
+  background-color: #7c7c7c;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.subNav-item {
+  padding: 1rem 1.5rem;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+.subNav-item:hover {
+  color: #fff;
 }
