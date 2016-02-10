@@ -515,6 +515,13 @@ body {
           justify-content: center;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .subNav {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .subNav-item {
   padding: 1rem 1.5rem;
   color: rgba(255,255,255,0.6);
@@ -911,15 +918,23 @@ footer p {
 }
 .sectionDetails p {
   margin: 0;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  overflow: hidden;
   border-top: 1px solid #7c7c7c;
   color: #ce181e;
 }
 .sectionDetails p:last-child {
   border-bottom: 1px solid #7c7c7c;
 }
+.sectionDetails p.is-open {
+  height: auto;
+}
 .sectionDetails span {
+  display: block;
+  margin-top: 0.5rem;
   color: #7c7c7c;
-  display: none;
 }
 .sectionSlider {
   -webkit-order: 2;

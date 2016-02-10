@@ -6,12 +6,20 @@
    
   p
     margin 0
+    height 2rem
+    padding-top .5rem
+    padding-bottom .5rem
+    overflow hidden
     border-top 1px solid $frisa__grey
     color $frisa__red
     
     &:last-child
       border-bottom 1px solid $frisa__grey
+      
+    &.is-open
+      height auto
   
   span
+    display block
+    margin-top .5rem
     color $frisa__grey
-    display none

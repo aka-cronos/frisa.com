@@ -32,16 +32,21 @@
       </div>
 
       <div class="sectionDetails">
-        <p>Texto</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem.</span>
-        <p>Texto</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem.</span>
-        <p>Texto</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem.</span>
-        <p>Texto</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem.</span>
-        <p>Texto</p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, autem.</span>
+        <p class="detail">Texto
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quisquam!</span>
+        </p>
+        <p class="detail">Texto
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, odio?</span>
+        </p>
+        <p class="detail">Texto
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, itaque!</span>
+        </p>
+        <p class="detail">Texto
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quae.</span>
+        </p>
+        <p class="detail">Texto
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, autem.</span>
+        </p>
       </div>
 
       <div class="sectionSlider">
@@ -101,5 +106,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/js/unslider.min.js"></script>
     <script src="/js/main.js"></script>
+
+    <script>
+      $(document).ready( function() {
+        $('.detail').click(function () {
+          $('.detail').removeClass('is-open');
+
+          if ($('.detail').hasClass('is-open')) {
+            $(this).toggleClass('is-open')
+          }
+          else{
+            $(this).addClass('is-open')
+          }
+        });
+      });
+    </script>
   </body>
 </html>
