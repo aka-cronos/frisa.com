@@ -50,7 +50,7 @@
       </div>
 
       <div class="sectionSlider">
-        <a id="gallery-trigger" class="gallery-trigger" href="#">Gallery</a>
+        <button id="gallery-trigger" class="gallery-trigger">Gallery</button>
         <div class="slider">
           <ul>        
             <li><img src="/img/industries/slider-aerospace-01.jpg" alt=""></li>
@@ -106,20 +106,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/js/unslider.min.js"></script>
     <script src="/js/main.js"></script>
-
-    <script>
-      $(document).ready( function() {
-        $('.detail').click(function () {
-          $('.detail').removeClass('is-open');
-
-          if ($('.detail').hasClass('is-open')) {
-            $(this).toggleClass('is-open')
-          }
-          else{
-            $(this).addClass('is-open')
-          }
-        });
-      });
-    </script>
   </body>
 </html>
