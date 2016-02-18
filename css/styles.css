@@ -510,12 +510,9 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .subNav {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -523,12 +520,22 @@ body {
   }
 }
 .subNav-item {
-  padding: 1rem 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: rgba(255,255,255,0.6);
   text-decoration: none;
 }
+.subNav-item:last-child {
+  margin-right: 0;
+}
 .subNav-item:hover {
   color: #fff;
+}
+@media only screen and (min-width: 600px) {
+  .subNav-item {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 footer:after {
   content: '';
