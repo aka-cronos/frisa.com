@@ -1,15 +1,21 @@
 .sectionContent
   wrapped()
-  lost-flex-container row
+  display flex
+  flex-wrap wrap
   margin-top 4rem
   margin-bottom 4rem
   
-  & > div
-    lost-column 1/2 flex
-    margin-bottom 1rem
-      
-    +below(900px)
-      lost-column 1 flex
-    
   +below(1120px)
    wrapped(90%)
+
+  & > div
+    width calc(50% - 1rem)
+    margin-bottom 1rem
+    
+    &:nth-child(odd)
+      margin-right 1rem
+
+    +below(900px)
+      margin-right 0
+      width 100%
+    

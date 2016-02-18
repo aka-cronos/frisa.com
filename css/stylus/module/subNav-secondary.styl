@@ -1,6 +1,6 @@
-.subNav
+.subNav-secondary
   wrapped()
-  background-color $frisa__grey
+  background-color $frisa__soft-grey
   display flex
   text-align center
   
@@ -10,7 +10,7 @@
   &-item
     padding-top 1rem
     padding-bottom 1rem
-    color rgba(white, .6)
+    color $frisa__grey
     text-decoration none
     
     &:last-child
@@ -18,7 +18,8 @@
 
     &:hover
     &.active
-      color white
+      color $frisa__dark-grey
+      border-bottom 4px solid $frisa__dark-grey
       
     +above(600px)
       padding-right 1rem
