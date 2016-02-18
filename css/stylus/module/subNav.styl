@@ -2,16 +2,23 @@
   wrapped()
   background-color $frisa__grey
   display flex
-  justify-content center
   text-align center
   
-  +below(600px)
+  +below(900px)
     flex-direction column
   
   &-item
-    padding 1rem 1.5rem
+    padding-top 1rem
+    padding-bottom 1rem
     color rgba(white, .6)
     text-decoration none
+    
+    &:last-child
+      margin-right 0
 
     &:hover
       color white
+      
+    +above(600px)
+      margin-right 1rem
+      margin-left 1rem
