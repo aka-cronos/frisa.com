@@ -1,25 +1,23 @@
-.subNav
+.products-subNav
   wrapped()
-  background-color $frisa__grey
   display flex
+  justify-content center
   text-align center
   
   +below(900px)
     flex-direction column
   
   &-item
+    font-size .8125rem
     padding-top 1rem
     padding-bottom 1rem
-    color rgba(white, .6)
+    color $frisa__grey
     text-decoration none
-    
-    &:last-child
-      margin-right 0
 
     &:hover
     &.active
-      color white
+      color $frisa__dark-grey
       
     +above(600px)
-      margin-right 1rem
-      margin-left 1rem
+      margin-right 2rem
+      margin-left 2rem

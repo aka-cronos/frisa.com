@@ -5,19 +5,27 @@
   padding-bottom 4rem
   text-align center
   
+  &.industries .sectionPreview
+    lost-waffle 1/3
+    
+  &.products .sectionPreview
+    lost-waffle 1/4
+
+  &.industries .sectionPreview    
+  &.products .sectionPreview
+    
+    +below(800px)
+      lost-waffle 1/2
+      
+    +below(600px)
+      lost-waffle: 1
+
 .sectionPreview
-  lost-waffle 1/3
   position relative
   min-height 200px
   background-color tomato
   color white
-  text-decoration none
-  
-  +below(800px)
-    lost-waffle 1/2
-    
-  +below(600px)
-    lost-waffle: 1
+  text-decoration none  
   
   &-info
     display flex
