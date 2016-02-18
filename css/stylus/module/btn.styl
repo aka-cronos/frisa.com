@@ -3,19 +3,45 @@
   text-align center
   text-decoration none
   
-  &--small
+  &__small
     font-size .75em
     padding .5em
     font-weight 600
     
-  &--red
+  &__red
+    color white
     background-color $frisa__dark-red
 
-  &--white
+  &__white
     color $frisa__dark-red
     background-color white
     
-  &--lang
+  &__lang
     color white
     margin-left 1.5rem
     background-color $frisa__dark-red
+  
+  &__download
+    display inline-block
+    padding .75rem 1rem
+    margin-bottom 2.5rem
+    color white
+    background-color $frisa__blue
+    
+    +below(900px)
+      margin-top 2.5rem
+      
+  &__viewMaterials
+  &__quote
+    display inline-block
+    padding .75rem 3rem
+    color white
+    background-color $frisa__red
+    
+  &__quote
+    margin-top 1rem
+
+  &__viewMaterials
+    
+    +above(800px)
+      margin-left 6rem

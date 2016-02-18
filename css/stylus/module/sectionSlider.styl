@@ -4,20 +4,22 @@
   
   +below(900px)
     order 3
+    text-align center
 
 .gallery-open
   position relative
-  display inline-block
+  display block
   margin-bottom 1rem
+  margin-left auto
+  padding 0 2.5rem 0 0
   border 0
-  padding-right 2.5rem
   background transparent
   color $frisa__grey
   
   &:after
     position absolute
+    top 0
     right 0
-    bottom 0
     content url(/img/gallery-icon.png)
 
 .gallery-close
