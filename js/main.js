@@ -21,8 +21,16 @@ $(document).ready(function() {
   });
 
   $('#gallery-open, #gallery-close').click(function() {
-    var $slider = $('.unslider');
+    var $unslider = $('.unslider');
+    var $sectionSlider = $('.sectionSlider');
 
-    $slider.toggleClass('isFixed');
+    $unslider.toggleClass('isFixed');
+    $sectionSlider.css('z-index', '15');
+  });
+
+  $('#gallery-close').click(function() {
+    var $sectionSlider = $('.sectionSlider');
+
+    $sectionSlider.css('z-index', '5');
   });
 });

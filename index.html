@@ -1,354 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Frisa</title>
-  <!-- Custom CSS -->
-  <link href="css/full-slider.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <nav id="primary_nav_wrap" class="nav-bar">
-    <div id="lineaGris"></div>
-    <div class="container menuSuperior">
-      <a href="index.html" id="logotipoCambio2" class="logotipo">
-        <img id="logotipoCambio" src="images/logotipo.png">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="New Frisa Corporate website">
+    <title>Frisa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="main-header main-header--body">
+      <a class="main-header__logo" href="/">
+        <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
-      <ul>
-        <li id="menu-2">
-          <a id="menu-2-2" href="productos.html">Products</a>
-          <ul>
-            <li class="submenu">
-              <a href="01_RolledRings.html">Rolled Rings</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Countoured Rings</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Bars</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Hollows</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Shafts</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Blocks</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Discs</a>
-            </li>
-            <hr class="menuhr">
-            <li class="submenu">
-              <a href="#">Pot Die Forgings</a>
-            </li>
-          </ul>
+
+      <nav class="main-nav">
+        <ul class="main-nav__menu">
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="/products/">Products</a>
+            <ul class="main-nav__dropdown">
+              <li><a href="/products/rolled-rings.html">Rolled Rings</a></li>
+              <li><a href="/products/contoured-rings.html">Contoured Rings</a></li>
+              <li><a href="/products/bars.html">Bars</a></li>
+              <li><a href="/products/hollows.html">Hollows</a></li>
+              <li><a href="/products/shafts.html">Shafts</a></li>
+              <li><a href="/products/blocks.html">Blocks</a></li>
+              <li><a href="/products/discs.html">Discs</a></li>
+              <li><a href="/products/pot-die-forgings.html">Pot Die Forgings</a></li>
+            </ul>
+          </li>
+          
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="/industries/">Industries</a>
+            <ul class="main-nav__dropdown">
+              <li><a href="/industries/aerospace.html">Aerospace</a></li>
+              <li><a href="/industries/construction-and-mining.html">Construction and Mining</a></li>
+              <li><a href="/industries/industrial-machinery.html">Industrial Machinery</a></li>
+              <li><a href="/industries/oil-and-gas.html">Oil and Gas</a></li>
+              <li><a href="/industries/power-generation.html">Power Generation</a></li>
+              <li><a href="/industries/wind-power.html">Wind Power</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="#">Materials</a>
+          </li>
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="/services/heat-treatment.html">Services</a>
+            <ul class="main-nav__dropdown">
+              <li><a href="/services/heat-treatment.html">Heat Treatment</a></li>
+              <li><a href="/services/machining.html">Machining</a></li>
+              <li><a href="/services/testing.html">Testing</a></li>
+              <li><a href="/services/product-development.html">Product Development</a></li>
+              <li><a href="/services/logistics.html">Logistics</a></li>
+            </ul>
+          </li>        
+          
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="/quality.html">Quality</a>
+          </li>
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="/about/">About</a>
+            <ul class="main-nav__dropdown">
+              <li><a href="/about/">Overview</a></li>
+              <li><a href="/about/facilities.html">Facilities</a></li>
+              <li><a href="/about/fundacion-frisa.html">Social Responsability</a></li>
+              <li><a href="/about/downloads.html">Downloads</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav__menu-item">
+            <a class="main-nav__link" href="#">Contact us</a>
+            <ul class="main-nav__dropdown">
+              <li><a href="#">General Inquiry</a></li>
+              <li><a href="#">Request a quote</a></li>
+              <li><a href="#">Suppliers Relations</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="main-nav-actions">
+        <a class="efrisa-logo" href="#">
+          <img src="/img/efrisa-logo.png" alt="eFrisa logo">
+        </a>
+        <a class="search" href="#">Search</a>
+        <a class="btn btn--small btn--lang" href="#">Español</a>
+      </div>
+    </header>
+
+    <section class="mainSlider">
+    </section>
+
+    <section class="home-about">
+      <h1 class="title title__red">FRISA IS A GLOBAL LEADING MANUFACTURER <br><span class="title title__white">OF SEAMLESS ROLLED RINGS AND OPEN DIE FORGINGS</span></h1>
+      <p>We serve a wide spectrum of industrial markets by offering high-value forging solutions in an extensive range of carbon, alloy and stainless steels, titanium and superalloys.</p>
+      <p>Our world-class standards, strong commitment to quality, exceptional customer service and our state-of-the-art manufacturing facilities have positioned Frisa as a strategic, reliable supplier among the world’s most outstanding OEM customers.</p>
+      <a class="basic-link" href="#">more ></a>
+    </section>
+
+    <section class="home-industries">
+      <h2 class="title title__red">INDUSTRIES <br>
+      <span class="title">Delivering excellence to our customers</span></h2>
+
+      <ul class="home-industries__list">
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-aerospace.jpg" alt="">
+            <span>Aerospace</span>
+          </a>
         </li>
-        <li id="menu-3">
-          <a id="menu-3-3" href="/industries/">Industries</a>
+
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-construction-mining.jpg" alt="">
+            <span>Construction and Mining</span>
+          </a>
         </li>
-        <li id="menu-4">
-          <a id="menu-4-4" href="#">Services</a>
+
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-industrial-machinery.jpg" alt="">
+            <span>Industrial Machinery</span>
+          </a>
         </li>
-        <li id="menu-5">
-          <a id="menu-5-5" href="#">About</a>
+
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-oil-gas.jpg" alt="">
+            <span>Oil and Gas</span>
+          </a>
         </li>
-        <li id="menu-6">
-          <a id="menu-6-6" href="#">Contact us</a>
+
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-power-generation.jpg" alt="">
+            <span>Power Generation</span>
+          </a>
+        </li>
+
+        <li class="home-industries__item">
+          <a class="home-industries__item-link" href="#">
+            <img class="home-industries__item-img" src="/img/home-wind-power.jpg" alt="">
+            <span>Wind Power</span>
+          </a>
         </li>
       </ul>
-      
-      <div id="menu-derecha">
-        <div id="logo2">
-          <a href="#"><img src="images/logotipo3.png"></a>
-        </div>
+    </section>
 
-        <div id="icono">
-          <a href="#"><i class="fa fa-search"></i></a>
-        </div> 
-        <div id="boton-idioma">
-          <button class="btn-tipo3">Español</button>
-        </div>  
-      </div>
-    </div>
-  </nav>
-    
-  <header id="myCarousel" class="carousel slide">
-    <div id="carouselbotones" class="carousel-buttons">
-      <div class="container2 row-center">
+    <section class="home-actions">
+      <a class="home-actions__item home-actions__item--quote" href="#">
+        <h4>Need quick forgings?</h4>
+        <p>
+          Frisa Express offers fast turnaround with quick delivery shedules on selected products.
+          We ship in as little as 5 days.
+        </p>
+        <span class="btn btn--small btn--white">Start now</span>
+      </a>
+      <a class="home-actions__item home-actions__item--careers" href="#">
+        <h4>Frisa Careers</h4>
+        <p>
+          If you are interested in being part of the forging evolution, please send us your resume.
+        </p>
+        <span class="btn btn--small btn--white">Send</span>
+      </a>
+    </section>
 
-        <div class="tipoN col-center2">
-          <a class="car1 slide1" data-target="#myCarousel" onclick="data1()" data-slide-to="0" href="#">Frisa</a>
-        </div>
-
-        <div class="col-center tipoN">
-          <a class="car1 slide2" data-target="#myCarousel" onclick="data2()" data-slide-to="1" href="#">Ring</a>
-        </div>
-        
-        <div class="col-center tipoN">
-          <a class="car1 slide3" data-target="#myCarousel" onclick="data3()"  data-slide-to="2" href="#">Round Bars</a>
-        </div>
-
-        <div class="col-center tipoN">
-          <a class="car1 slide4" data-target="#myCarousel" onclick="data4()" data-slide-to="3" href="#">Hollow Forgings</a>
-        </div>
-
-        <div class="col-center tipoN">
-          <a class="car1 slide5" data-target="#myCarousel" onclick="data5()" data-slide-to="4" href="#">Shafts</a>
-        </div>
-
-        <div class="col-center tipoN">
-          <a class="car1 slide6" data-target="#myCarousel" onclick="data6()" data-slide-to="5" href="#">Blocks and Flat Bars</a>
-        </div>
-
-        <div class="col-center3 tipoN">
-          <a class="car1 slide7" data-target="#myCarousel" onclick="data7()" data-slide-to="6" href="#">Discs</a>
-        </div>
-
-        <div class="col-xs-1 text-center"></div>
-      </div>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="item active">
-               
-        <div class="fill" style="background-image:url('images/back1.png')"></div>
-        
-        <div class="carousel-caption">
-          <h2 class="tipoB font-carousel">RINGS</h2>
-          <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.<br>
-                        
-          <div>
-            <button class="btn-tipo5" style="margin-right:10px;">Download</button>
-            <button class="btn-tipo4">Get a quote</button>
+      <footer>
+        <div class="container">      
+          <a href="#" class="logoFooter">
+            <img src="/img/frisa-logo-2.png" alt="">
+          </a>
+          <div class="social">
+            <p>Follow us</p>
+            <a href="" class="social-icon">
+              <img src="/images/facebook.png">
+            </a>
+            <a href="" class="social-icon">
+              <img src="/images/twitter.png">
+            </a>
+            <a href="" class="social-icon">
+              <img src="/images/linkedin.png">
+            </a>
           </div>
 
-          <br>
-            
-          <a class="botontipo1 link-abajo tipoN" href="#">more ></a>
-        </p>
-      </div>
-    </div>
+          <div class="contactInfo">
+            <p>Contact</p>
+            <span>México TOLL FREE: 01 800 253 7472</span>
+            <span>US TOLL FREE: 1 888 882 0959</span>
+            <span>International: +52 (81) 8153 0300</span>
+          </div>
 
-    <div class="item">
-      <div class="fill" style="background-image:url('images/back1.png')"></div>
-      <div class="carousel-caption">
-        <h2 class="tipoB font-carousel">RINGS</h2>
-        <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
-      </div>
-    </div>
-            
-    <div class="item">
-      <div class="fill" style="background-image:url('images/back1.png')"></div>
-      <div class="carousel-caption">
-        <h2 class="tipoB font-carousel">RINGS2</h2>
-        <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
-      </div>
-    </div>
-        
-     <div class="item">
-        <div class="fill" style="background-image:url('images/back1.png')"></div>
-        <div class="carousel-caption">
-          <h2 class="tipoB font-carousel">RINGS3</h2>
-          <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
+          <div class="footerLinks">
+            <a href="#">eFrisa</a>
+            <a href="#">Buzón de denuncia Frisa</a>
+          </div>
         </div>
-    </div>
-        
-    <div class="item">
-      <div class="fill" style="background-image:url('images/back1.png')"></div>
-      <div class="carousel-caption">
-        <h2 class="tipoB font-carousel">RINGS4</h2>
-        <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
-      </div>
-    </div>
-        
-    <div class="item">
-      <div class="fill" style="background-image:url('images/back1.png')"></div>
-      <div class="carousel-caption">
-        <h2 class="tipoB font-carousel">RINGS5</h2>
-        <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
-      </div>
-    </div>
-        
-    <div class="item">
-      <div class="fill" style="background-image:url('images/back1.png')"></div>
-      <div class="carousel-caption">
-        <h2 class="tipoB font-carousel">RINGS6</h2>
-        <p class="tipoN font-carousel2">Tailored solutions with improved quality <br>and material cost reduction.</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="ctrl">
-      <img src="images/f-left.png"/>
-    </span>
-  </a>
-  
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="ctrl">
-      <img src="images/f-right.png"/>
-    </span>
-  </a>
-
-    </header>
-    <div id="seccion2">
-        <div id="negra">
-            <div class="img-Negra">
-            
-                <div class="container2 centered" style="padding-top:1%;">
-                    <p class="titulosec2">
-                    <span class="tipoN fontred">FRISA IS A GLOBAL LEADING MANUFACTURER</span> <br> <span class="tipoN fontW">OF SEAMLESS ROLLED RINGS AND OPEN DIE FORGINGS</span>
-                    </p>
-                    <p class="font-sec2 tipoN">We serve a wide spectrum of industrial markets by offering high-value forging solutions in an extensive range of carbon, alloy and stainless steels, titanium and superalloys.<br><br>
-Our world-class standards, strong commitment to quality, exceptional customer service and our state-of-the-art manufacturing facilities have positioned Frisa as a strategic, reliable supplier among the world’s most outstanding OEM customers.<br><br>
-<a class="botontipo1 link-abajo" href="#">more > </a>
-                        </p>
-                </div>
-            
-            
-            </div>
+        <div class="legals">
+          <p class="legals-item">FRISA ALL RIGHTS RESERVED 2015</p>
+          <span class="separator"> </span>
+          <p class="legals-item">Santa Catarina, Nuevo León. México</p>
+          <span class="separator"> </span>
+          <a class="legals-item" href="#">Privacy Policy</a>
         </div>
-       
-    </div>
-    
-    
-    <div id="seccion3" class="container centered" style="padding-top:5%;">
-    
-      <h3 class="fontred tipoB titulosec3-2">INDUSTRIES</h3>
-        <p class="fontgrey tipoN titulosec3-2">Delivering excellence to our customers</p>
-   
-        
-      
-    <div class="imagenes-circulo">
-      <div class="circle-container">
-			<div class="inner-circle img-1"></div>
-		</div>	
-      <p class="fontred tipoB titulosec3">Aerospace</p>
-     
-    </div>
-    <div class="imagenes-circulo">
-      <div class="circle-container">
-			<div class="inner-circle img-2"></div>
-		</div>	
-       <p class="fontred tipoB titulosec3">Construction <br>and Mining
-</p>
-    </div>
-    <div class="imagenes-circulo">
-      <div class="circle-container">
-			<div class="inner-circle img-3"></div>
-		</div>	
-       <p class="fontred tipoB titulosec3">Industrial <br>Machinery</p>
-    </div>
-    <div class="imagenes-circulo">
-      <div class="circle-container">
-			<div class="inner-circle img-4"></div>
-		</div>	
-       <p class="fontred tipoB titulosec3">Oil and Gas</p>
-    </div>
-    <div class="imagenes-circulo">
-     <div class="circle-container">
-			<div class="inner-circle img-5"></div>
-		</div>	
-       <p class="fontred tipoB titulosec3">Power<br> Generation</p>
-    </div>
-    <div class="imagenes-circulo">
-      <div class="circle-container">
-			<div class="inner-circle img-6"></div>
-		</div>	
-       <p class="fontred tipoB titulosec3">Wind Power</p>
-    </div>
+      </footer>
 
- </div>   
-                         
-    <div id="seccion4">
-            <div class="col-lg-6 img-Left centered" style="min-height:400px;">
-            <div class="espacios">
-             <p class="fontW tipoN"><b>Need quick forgings?</b><br>
-Frisa Express offers fast turnaround with quick <br>delivery schedules on selected products.<br>
-We ship in as little as 5 days.</p>
-            <button class="btn-tipo2">Start now</button></div>
-            </div>
-            <div class="col-lg-6 img-Right centered" style="min-height:400px;">
-            <div class="espacios">
-            <p class="fontW tipoN"><b>Frisa Careers</b><BR>
-If you are interested in being<br>part of the forging evolution,<br>please send us your resume.</p>
-            <button class="btn-tipo2">Send</button>
-                </div>
-            </div>
-    </div>
-
-    
-    
-<div id="contacto">
-    <div class="container3" style="margin-top:40px; background:#414141;">
-        <a href="index.html"><div style="margin-top:20px;"><img src="images/logo-b.png"></div></a>
-        
-        <div id="col-1" class="tipoN fontW">
-             <tr><td>follow us<br></td></tr>
-            <tr>
-                <td><a href="#"><img src="images/facebook.png"></a></td>
-                <td><a href="#"><img src="images/twitter.png"></a></td>
-                <td><a href="#"><img src="images/linkedin.png"></a></td>
-            </tr>
-        
-        </div>
-        <div id="col-2" class="tipoN fontW"> 
-             <tr>
-                <td > <b>Contact</b><br>
-    México TOLL FREE: 01 800 253 7472	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US TOLL FREE: 1 888 882 0959<br>
-               International: +52 (81) 8153 0300
-                    
-                 </td>
-            </tr>
-        </div>
-        
-        <div id="col-3" class="tipoB">
-            <a class="link-abajo" href="#">eFrisa</a><br>
-            <a class="link-abajo" href="#">Buzón de denuncia Frisa</a><br>
-        </div>
-       
-    </div> 
-       
-       <div class="centered tipoN fontW foot">
-        <hr class="footer-separador">
-        <p class="tipoN">FRISA ALL RIGHTS RESERVED 2015  |  Santa Catarina, Nuevo León. México  |  Privacy Policy</p>
-    </div>
-   </div>
-    
-    
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-   
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <script src="js/btnslider.js"></script>
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-    
-
-    
-</body>
-
+  </body>
 </html>
-
-
