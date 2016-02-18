@@ -916,7 +916,8 @@ footer p {
             order: 2;
   }
 }
-.sectionDetails p {
+.sectionDetails .detail {
+  position: relative;
   margin: 0;
   height: 2rem;
   padding-top: 0.5rem;
@@ -924,12 +925,27 @@ footer p {
   overflow: hidden;
   border-top: 1px solid #7c7c7c;
   color: #ce181e;
+  cursor: pointer;
 }
-.sectionDetails p:last-child {
+.sectionDetails .detail:last-child {
   border-bottom: 1px solid #7c7c7c;
 }
-.sectionDetails p.is-open {
+.sectionDetails .detail.is-open {
   height: auto;
+}
+.sectionDetails .detail.is-open:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sectionDetails .detail:after {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  display: block;
+  overflow: auto;
+  width: 24px;
+  height: 24px;
+  content: url("/img/arrow-down.png");
 }
 .sectionDetails span {
   display: block;
