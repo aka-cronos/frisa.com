@@ -20,9 +20,9 @@ $(document).ready(function() {
     }
   });
 
-  $('#gallery-trigger').click(function() {
+  $('#gallery-open, #gallery-close').click(function() {
     var $slider = $('.unslider');
 
-    $slider.addClass('sliderFixed');
+    $slider.toggleClass('isFixed');
   });
 });

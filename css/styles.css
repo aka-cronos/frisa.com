@@ -940,6 +940,7 @@ footer p {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
+  text-align: right;
 }
 @media only screen and (max-width: 900px) {
   .sectionSlider {
@@ -948,29 +949,47 @@ footer p {
             order: 3;
   }
 }
-.gallery-trigger {
+.gallery-open {
   position: relative;
-  display: block;
+  display: inline-block;
   margin-bottom: 1rem;
+  border: 0;
   padding-right: 2.5rem;
+  background: transparent;
   color: #7c7c7c;
-  text-align: right;
-  text-decoration: none;
 }
-.gallery-trigger:after {
+.gallery-open:after {
   position: absolute;
   right: 0;
   bottom: 0;
   content: url("/img/gallery-icon.png");
 }
-.sliderFixed {
-  position: fixed;
-  top: 20%;
-  right: 20%;
-  bottom: 20%;
-  left: 20%;
+.gallery-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  font-size: 2rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+  background: transparent;
+  color: #fff;
 }
-.sliderFixed:before {
+.isFixed {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  left: 10%;
+}
+.isFixed .gallery-close {
+  display: block;
+}
+.isFixed:before {
   position: fixed;
   top: 0;
   right: 0;
