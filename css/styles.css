@@ -1091,7 +1091,35 @@ footer p {
   margin: 0;
 }
 .sectionHeader-industries {
-  background: url("/img/sectionHeader-industries.jpg") center no-repeat;
+  background: url("/img/industries/header-industries.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-aerospace {
+  background: url("/img/industries/header-aerospace.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-construction-and-mining {
+  background: url("/img/industries/header-construction-and-mining.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-industrial-machinery {
+  background: url("/img/industries/header-industrial-machinery.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-oil-and-gas {
+  background: url("/img/industries/header-oil-and-gas.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-power-generation {
+  background: url("/img/industries/header-power-generation.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-wind-power {
+  background: url("/img/industries/header-wind-power.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-products {
+  background: url("/img/products/header-products.jpg") center no-repeat;
   background-size: cover;
 }
 .sectionPreview-container:after {
@@ -1271,27 +1299,59 @@ footer p {
 .sectionPreview:hover .sectionPreview-description {
   display: block;
 }
+.sectionPreview.rolled-rings {
+  background: url("/img/products/rolled-rings-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.contoured-rings {
+  background: url("/img/products/contoured-rings-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.bars {
+  background: url("/img/products/bars-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.hollows {
+  background: url("/img/products/hollows-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.shafts {
+  background: url("/img/products/shafts-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.blocks {
+  background: url("/img/products/blocks-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.discs {
+  background: url("/img/products/discs-preview.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionPreview.pot-die-forgings {
+  background: url("/img/products/pot-die-forgings-preview.jpg") center no-repeat;
+  background-size: cover;
+}
 .sectionPreview.aerospace {
   background: url("/img/industries/aerospace-preview.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionPreview.constructionandmining {
+.sectionPreview.construction-and-mining {
   background: url("/img/industries/constructionandmining-preview.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionPreview.industrialmachinery {
+.sectionPreview.industrial-machinery {
   background: url("/img/industries/industrialmachinery-preview.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionPreview.oilandgas {
+.sectionPreview.oil-and-gas {
   background: url("/img/industries/oilandgas-preview.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionPreview.powergeneration {
+.sectionPreview.power-generation {
   background: url("/img/industries/powergeneration-preview.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionPreview.windpower {
+.sectionPreview.wind-power {
   background: url("/img/industries/windpower-preview.jpg") center no-repeat;
   background-size: cover;
 }
