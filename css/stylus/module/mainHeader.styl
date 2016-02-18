@@ -126,3 +126,41 @@
 .basic-link
   color white
   font-weight 400
+  
+.main-nav
+.main-nav-actions
+  
+  +below(1120px)
+    display none
+
+.burguerIcon
+$burguerIcon
+  position relative
+  width 100%
+  height 2px
+  background-color white
+  
+  &:before
+  &:after
+    position absolute
+    width 100%
+    height 2px
+    content ''
+    top -.75rem
+    left 0
+    background-color inherit
+    
+  &:after
+    top .75rem
+    
+  +above(1120px)
+    display none
+  
+.mainNav-trigger
+  float right
+  padding 0
+  margin-top 1.75rem
+  width 2.5rem
+  height 2.5rem
+  border 0
+  background transparent
