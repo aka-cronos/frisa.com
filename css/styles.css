@@ -383,27 +383,27 @@ body {
 .productCapabilities:nth-child(0n) {
   margin-right: 0;
 }
-.productCertifications {
+.downloads {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: calc(99.99% * 4/12 - (16px - 16px * 4/12));
 }
-.productCertifications:nth-child(1n) {
+.downloads:nth-child(1n) {
   margin-right: 16px;
 }
-.productCertifications:last-child {
+.downloads:last-child {
   margin-right: 0;
 }
-.productCertifications:nth-child(0n) {
+.downloads:nth-child(0n) {
   float: right;
 }
-.productCertifications:nth-child(0n) {
+.downloads:nth-child(0n) {
   margin-right: 0;
 }
 @media only screen and (max-width: 600px) {
   .productCapabilities,
-  .productCertifications {
+  .dowloads {
     margin-bottom: 2rem;
     width: 100%;
   }
