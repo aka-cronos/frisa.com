@@ -1122,6 +1122,14 @@ footer p {
   background: url("/img/products/header-products.jpg") center no-repeat;
   background-size: cover;
 }
+.sectionHeader-services {
+  background: url("/img/services/header-services.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-quality {
+  background: url("/img/header-quality.jpg") center no-repeat;
+  background-size: cover;
+}
 .sectionPreview-container:after {
   content: '';
   display: table;
