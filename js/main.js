@@ -12,6 +12,7 @@ $(document).ready(function() {
   $('.fullSlider').unslider({
     autoplay: true,
     infinite: true,
+    delay: 6000,
     nav: true,
     arrows: {
       prev: '<a class="unslider-arrow prev"><img src="/img/arrow-left.png" alt="" /></a>',
