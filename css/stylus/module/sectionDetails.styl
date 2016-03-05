@@ -3,22 +3,20 @@
   .detail
     position relative
     margin 0
-    height 2rem
+    // height 2rem
     padding-top .5rem
     padding-bottom .5rem
     overflow hidden
     border-top 1px solid $frisa__grey
     color $frisa__red
     cursor pointer
+    transition 300ms all ease-in-out
     
     &:last-child
       border-bottom 1px solid $frisa__grey
       
-    &.is-open
-      height auto
-      
-      &:after
-        transform rotate(180deg)
+    &.is-open:after
+      transform rotate(180deg)
       
     &:after
       position absolute
@@ -31,6 +29,6 @@
       content url(/img/arrow-down.png)
   
   span
-    display block
+    display none
     margin-top .5rem
     color $frisa__grey

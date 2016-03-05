@@ -19,14 +19,16 @@ $(document).ready(function() {
       next: '<a class="unslider-arrow next"><img src="/img/arrow-right.png" alt="" /></a>'
     }
   });
-  $('.detail').click(function () {
-    var $currentElement = $(this);
-    
-    if ($currentElement.hasClass('is-open')) {
-      $currentElement.removeClass('is-open');
+ 
+  $('.detail').click(function () {    
+    if ($(this).hasClass('is-open')) {
+      $(this).removeClass('is-open');
+      $(this).find('span').hide("1000");
     } else {
       $('.detail').removeClass('is-open');
-      $currentElement.addClass('is-open');
+      $('.detail').find('span').hide("1000");
+      $(this).addClass('is-open');
+      $(this).find('span').show("1000").css( "display", "block");      
     }
   });
 

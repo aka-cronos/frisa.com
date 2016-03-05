@@ -10,17 +10,20 @@
   </head>
   
   <body>
-    <header class="main-header main-header--body">
-      <a class="main-header__logo" href="/">
+    <header class="mainHeader mainHeader__isFixed">
+      <a class="mainHeader-logo" href="/">
         <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
 
-      <nav class="main-nav">
-        <ul class="main-nav__menu">
-
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/products/">Products</a>
-            <ul class="main-nav__dropdown">
+      <button class="mainNav-trigger" >
+        <div class="burguerIcon"></div>
+      </button>
+  
+      <nav class="mainNav">
+        <ul class="mainNav-menu">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/products/">Products</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/products/rolled-rings.html">Rolled Rings</a></li>
               <li><a href="/products/contoured-rings.html">Contoured Rings</a></li>
               <li><a href="/products/bars.html">Bars</a></li>
@@ -32,9 +35,9 @@
             </ul>
           </li>
           
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/industries/">Industries</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/industries/">Industries</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/industries/aerospace.html">Aerospace</a></li>
               <li><a href="/industries/construction-and-mining.html">Construction and Mining</a></li>
               <li><a href="/industries/industrial-machinery.html">Industrial Machinery</a></li>
@@ -44,13 +47,13 @@
             </ul>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="#">Materials</a>
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="#">Materials</a>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/services/heat-treatment.html">Services</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/services/heat-treatment.html">Services</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/services/heat-treatment.html">Heat Treatment</a></li>
               <li><a href="/services/machining.html">Machining</a></li>
               <li><a href="/services/testing.html">Testing</a></li>
@@ -59,13 +62,13 @@
             </ul>
           </li>        
           
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/quality.html">Quality</a>
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/quality.html">Quality</a>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link active" href="/about/">About</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/about/">About</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/about/">Overview</a></li>
               <li><a href="/about/facilities.html">Facilities</a></li>
               <li><a href="/about/fundacion-frisa.html">Social Responsability</a></li>
@@ -73,9 +76,9 @@
             </ul>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="#">Contact us</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="#">Contact us</a>
+            <ul class="mainNav-dropdown">
               <li><a href="#">General Inquiry</a></li>
               <li><a href="#">Request a quote</a></li>
               <li><a href="#">Suppliers Relations</a></li>
@@ -85,12 +88,12 @@
         </ul>
       </nav>
       
-      <div class="main-nav-actions">
+      <div class="mainNav-actions">
         <a class="efrisa-logo" href="#">
           <img src="/img/efrisa-logo.png" alt="eFrisa logo">
         </a>
         <a class="search" href="#">Search</a>
-        <a class="btn btn--small btn--lang" href="#">Español</a>
+        <a class="btn-lang" href="#">Español</a>
       </div>
     </header>
 
@@ -108,30 +111,32 @@
 
     <section class="facilities">
       <div class="facilities-item">
-        <img src="/img/industries/aerospace-preview.jpg" alt="">
+        <img src="/img/about/facilities-superalloys.jpg" alt="">
         <h2 class="title title__small title__red">Superalloys</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptatem, rerum ipsa inventore veniam quis nobis praesentium at soluta, totam, vero eligendi provident placeat eius aliquid quidem saepe. Ratione quas architecto temporibus laborum, debitis facilis placeat laboriosam veritatis voluptate deserunt.</p>
+        <p class="text">Established in 2003 as a response to a growing demand, our Superalloys Plant specializes in seamless rolled rings for the Aerospace and Power Generation Industries. A few meters away from our Santa Catarina plant; it operates under 127, 713 sq. feet (11,865 sq. m) with state-of the-art technology and the most modern manufacturing systems. NADCAP and ISO 9100 & 14001 approved.</p>
       </div>
       <div class="facilities-item">
-        <img src="/img/industries/aerospace-preview.jpg" alt="">
+        <img src="/img/about/facilities-santacatarina.jpg" alt="">
         <h2 class="title title__small title__red">Santa Catarina</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate quae dolor, voluptates delectus quis, consequatur magnam enim quia error dolore aspernatur, autem, tempore nam fugit minima id. Fugit provident quam nesciunt nostrum ut dolor. Iusto dolore facere neque voluptate?</p>
+        <p class="text">Our Santa Catarina facility, with 4 forging lines under 1,172,840 sq. feet ( 108,960 sq. m) of manufacturing space, has the capability and experience to offer high value forgings solutions in an ample variety of shapes, geometries and sizes.</p>
+        <p class="text">Located in the heart of the Industrial strip of Monterrey Mexico, it ́s nearness to the US border (139 miles) places us in an ideal location for the shipping and transportation of our products to the rest of the world.</p>
       </div>
       <div class="facilities-item">
-        <img src="/img/industries/aerospace-preview.jpg" alt="">
+        <img src="/img/about/facilities-garcia.jpg" alt="">
         <h2 class="title title__small title__red">García</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis a ullam, ab adipisci accusantium, deleniti mollitia illum tempore ipsum earum beatae nobis nam eligendi aspernatur aperiam. Sunt, accusamus praesentium, voluptatum, sed repellendus sequi hic modi vel laudantium provident, molestias nesciunt.</p>
+        <p class="text">Our Garcia facility is located 6 miles (9.6 km) away from our others facilities. In 1,780,780 sq. feet(165,439 sq. m) of manufacturing space, it can satisfy your requirements for even the largest forgings. With the capability to produce complex shapes in various grades of Steel and Nickel base alloys, its state-of-the-art technology, and its location next to a principal railroad, our Garcia plant is an integral solution to your forging needs.</p>
       </div>
       <div class="facilities-item">
-        <img src="/img/industries/aerospace-preview.jpg" alt="">
+        <img src="/img/about/facilities-open-die.jpg" alt="">
         <h2 class="title title__small title__red">Open Die</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tempora officiis quibusdam. Explicabo repellendus eligendi sed molestiae quam fuga facilis ratione laborum ullam blanditiis magni, nostrum, temporibus, eius dicta eaque modi aperiam nesciunt accusamus quae ipsam ipsum vitae minus debitis.</p>
+        <p class="text">Our Open Die facility is located in García, Nuevo Leon (6 miles away from our other facilities). With 90,000 sq. feet (8,000 sq. m) of manufacturing space, it was specifically designed to offer a wider range of open forging products in various grades of Steel and Carbon base alloys.</p>
+        <p class="text">Equipped with state-of-the-art technology that enables us to produce larger, heavier and more complex shapes, Open Die plant represents a leap in our forging solutions portfolio.</p>
       </div>
-      <div class="facilities-item">
-        <img src="/img/industries/aerospace-preview.jpg" alt="">
+      <!-- <div class="facilities-item">
+        <img src="/img/about/facilities-ring-master" alt="">
         <h2 class="title title__small title__red">Ring Masters</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquam soluta repudiandae, accusamus vero hic pariatur iusto voluptas repellat eveniet vel quae ea numquam officia veritatis error consectetur nulla quasi dolore culpa accusantium. Soluta rerum saepe corporis, repellat voluptatum assumenda.</p>
-      </div>
+        <p class="text">Established as Joint Venture with Scot Forge in 1996 it provides service to the Mid West and North regions of USA & Canada. Located in Wayne, Michigan, USA, with more than 140,000 sq. feet of manufacturing space, it has the capability to offer quick turnaround to a specialized market, in both forged and rough turned rolled rings.</p>
+      </div> -->
     </section>
 
     <footer>

@@ -1,15 +1,15 @@
-.main-nav
+.mainNav
   float left
   clear fix
   margin-left 100px
       
-  &__menu
+  &-menu
     clear fix
     margin 0
     padding 0
     list-style none
     
-    &-item
+    &Item
       position relative
       float left
       margin-right 1em
@@ -21,10 +21,10 @@
       &:first-child
         margin-left 0
         
-      &:hover .main-nav__dropdown
+      &:hover .mainNav-dropdown
         display block
   
-  &__dropdown
+  &-dropdown
     position absolute
     top 100%
     left 0
@@ -49,7 +49,7 @@
       display block
       text-decoration none
         
-  &__link
+  &-link
     position relative
     padding 2.5em .5em
     display block
@@ -72,17 +72,17 @@
       height 4px
       content ''
           
-.main-nav-actions
+.mainNav-actions
   display flex
   float right
   align-items center
   height 99px
   
 .efrisa-logo
-  @extend .main-header__logo
+  @extend .mainHeader-logo
   
   & img
-    @extend .main-header__logo img
+    @extend .mainHeader-logo img
     
 .search
   display none
@@ -91,8 +91,8 @@
   color white
   font-weight 400
   
-.main-nav
-.main-nav-actions
+.mainNav
+.mainNav-actions
   
   +below(1120px)
     display none

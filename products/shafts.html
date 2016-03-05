@@ -10,17 +10,20 @@
   </head>
   
   <body>
-    <header class="main-header">
-      <a class="main-header__logo" href="/">
+    <header class="mainHeader">
+      <a class="mainHeader-logo" href="/">
         <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
 
-      <nav class="main-nav">
-        <ul class="main-nav__menu">
-
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link active" href="/products/">Products</a>
-            <ul class="main-nav__dropdown">
+      <button class="mainNav-trigger" >
+        <div class="burguerIcon"></div>
+      </button>
+  
+      <nav class="mainNav">
+        <ul class="mainNav-menu">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/products/">Products</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/products/rolled-rings.html">Rolled Rings</a></li>
               <li><a href="/products/contoured-rings.html">Contoured Rings</a></li>
               <li><a href="/products/bars.html">Bars</a></li>
@@ -32,9 +35,9 @@
             </ul>
           </li>
           
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/industries/">Industries</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/industries/">Industries</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/industries/aerospace.html">Aerospace</a></li>
               <li><a href="/industries/construction-and-mining.html">Construction and Mining</a></li>
               <li><a href="/industries/industrial-machinery.html">Industrial Machinery</a></li>
@@ -44,13 +47,13 @@
             </ul>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="#">Materials</a>
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="#">Materials</a>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/services/heat-treatment.html">Services</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/services/heat-treatment.html">Services</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/services/heat-treatment.html">Heat Treatment</a></li>
               <li><a href="/services/machining.html">Machining</a></li>
               <li><a href="/services/testing.html">Testing</a></li>
@@ -59,13 +62,13 @@
             </ul>
           </li>        
           
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/quality.html">Quality</a>
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/quality.html">Quality</a>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="/about/">About</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="/about/">About</a>
+            <ul class="mainNav-dropdown">
               <li><a href="/about/">Overview</a></li>
               <li><a href="/about/facilities.html">Facilities</a></li>
               <li><a href="/about/fundacion-frisa.html">Social Responsability</a></li>
@@ -73,9 +76,9 @@
             </ul>
           </li>
 
-          <li class="main-nav__menu-item">
-            <a class="main-nav__link" href="#">Contact us</a>
-            <ul class="main-nav__dropdown">
+          <li class="mainNav-menuItem">
+            <a class="mainNav-link" href="#">Contact us</a>
+            <ul class="mainNav-dropdown">
               <li><a href="#">General Inquiry</a></li>
               <li><a href="#">Request a quote</a></li>
               <li><a href="#">Suppliers Relations</a></li>
@@ -85,12 +88,12 @@
         </ul>
       </nav>
       
-      <div class="main-nav-actions">
+      <div class="mainNav-actions">
         <a class="efrisa-logo" href="#">
           <img src="/img/efrisa-logo.png" alt="eFrisa logo">
         </a>
         <a class="search" href="#">Search</a>
-        <a class="btn btn--small btn--lang" href="#">Español</a>
+        <a class="btn-lang" href="#">Español</a>
       </div>
     </header>
   
@@ -110,11 +113,11 @@
         <h1 class="title title__red">Shafts</h1>
         <h2 class="title">ENHANCED PRODUCT PERFORMANCE  WITH STEPS FORGED WITH PRECISION</h2>
         <p class="text">The open die forging process for our shafts enables us to orient the grain flow all along the geometry, which is essential for achieving the high mechanical properties expected of a product of this type. Our forging capabilities provide significant cost and material savings when compared to machined bar step shafts.</p>
-        <a class="btn btn__quote" href="#">Request a quote</a>
+        <a class="btn-quote" href="#">Request a quote</a>
       </div>
 
       <div class="sectionSlider">
-        <a class="btn btn__download" href="#">Download Product Capabilities</a>
+        <a class="btn-download" href="#">Download Product Capabilities</a>
         <button id="gallery-open" class="gallery-open">Gallery</button>
         <div class="slider">
           <button id="gallery-close" class="gallery-close">+</button>       
@@ -133,30 +136,30 @@
         </h3>
         <table>
           <tr>
-            <td rowspan="2">Range</td>
+            <td class="titleCapability" rowspan="2">Range</td>
             <td>O.D. up to 70 in. <br> I.D. up to 287 in.</td>
           </tr>
           <tr>
             <td>Weight up to 55,000 lb.</td>
           </tr>
           <tr>
-            <td>Material</td>
+            <td class="titleCapability">Material</td>
             <td>Carbon Steel, Alloy Steel, Stainless Steel.</td>
           </tr>
           <tr>
-            <td>Heat Treatment</td>
+            <td class="titleCapability">Heat Treatment</td>
             <td>Normalizing, Quenching, Tempering, Annealing, Solution Annealing, Spherodizing, Aging, Stress Relieving</td>
           </tr>
           <tr>
-            <td>Testing</td>
+            <td class="titleCapability">Testing</td>
             <td>Destructive and Non-destructive</td>
           </tr>
           <tr>
-            <td>Laboratory Facilities</td>
+            <td class="titleCapability">Laboratory Facilities</td>
             <td>Available</td>
           </tr>
           <tr>
-            <td>Machining</td>
+            <td class="titleCapability">Machining</td>
             <td>Available CNC machining capabilities: vertical & horizontal turning, milling, boring, drilling, deep drilling</td>
           </tr>
         </table>
@@ -180,7 +183,7 @@
         <h3 class="title title__small title__red">View all materials</h3>
         <p class="text">If you need a certain material not currently being manufactured, please do not hesitate to contact us. Our very capable engineering team will gladly work to offer a solution.</p>
       </div>
-      <a class="btn btn__viewMaterials" href="#">View all materials</a>
+      <a class="btn-materials" href="#">View all materials</a>
     </section>
 
     <footer>

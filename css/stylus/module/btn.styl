@@ -1,74 +1,99 @@
 .btn
+$btn
+  display inline-block
   border-radius 4px
   text-align center
   text-decoration none
+  transition 300ms all ease-in-out
+
+.btn__small
+$btn__small
+  min-width 100px
+  font-size .75em
+  padding .5em
+  font-weight 600
+
+.btn__small-with
+$btn__small-with
+  font-size .75em
+  padding .5em
+  font-weight 600
   
-  &__small
-    display inline-block
-    min-width 100px
-    font-size .75em
-    padding .5em
-    font-weight 600
-    
-  &__red
+.btn__large
+$btn__large
+  padding .75rem 2rem
+  
+.btn__white
+$btn__white
+  color $frisa__dark-red
+  background-color white
+  &:hover
     color white
     background-color $frisa__dark-red
-
-  &__grey
-    color white
-    background-color $frisa__dark-grey
-    
-  &__white
-    color $frisa__dark-red
-    background-color white
-
-  &__lang
-    color white
-    margin-left 1.5rem
-    background-color $frisa__dark-red
-  
-  &__download
-    display inline-block
-    padding .75rem 1rem
-    margin-bottom 2.5rem
-    color white
-    background-color $frisa__blue
-    
-    +below(900px)
-      margin-top 2.5rem
       
-  &__viewMaterials
-  &__quote
-    display inline-block
-    padding .75rem 3rem
-    color white
-    background-color $frisa__red
-    
-  &__quote
-    margin-top 1rem
-
-  &__viewMaterials
-    
-    +above(800px)
-      margin-left 6rem
-
-  &--small // SHAME /////////////////////////////////
-    font-size .75em
-    padding .5em
-    font-weight 600
-    
-  &--red
-    background-color $frisa__dark-red
-
-  &--white
+.btn__red
+$btn__red
+  color white
+  background-color $frisa__dark-red
+  &:hover
     color $frisa__dark-red
     background-color white
     
-  &--lang
-    color white
-    margin-left 1.5rem
-    background-color $frisa__dark-red
-    
-.basic-link
+.btn__red-onWhite
+$btn__red-onWhite
   color white
-  font-weight 400
+  background-color $frisa__dark-red
+  &:hover
+    background-color $frisa__red
+
+.btn__grey
+$btn__grey
+  color white
+  background-color $frisa__dark-grey
+  &:hover
+    color $frisa__dark-grey
+    background-color white
+    
+.btn__blue
+$btn__blue
+  color white
+  background-color $frisa__blue
+  &:hover
+    background-color darken($frisa__blue, 30%)
+
+.btn-lang
+  @extend $btn
+  @extend $btn__small-with
+  @extend $btn__red
+  margin-left 1.5rem
+  
+.btn-sliderQuote
+  @extend $btn
+  @extend $btn__small
+  @extend $btn__red
+  
+.btn-sliderDownload
+  @extend $btn
+  @extend $btn__small
+  @extend $btn__grey
+
+.btn-quote
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__red-onWhite
+  margin-top 1rem
+  
+.btn-download
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__blue
+  margin-bottom 2rem
+  
+.btn-materials
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__red-onWhite
+
+  +above(800px)
+    margin-left 6rem
+    

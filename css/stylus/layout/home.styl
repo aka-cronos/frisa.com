@@ -1,45 +1,29 @@
-// SHAME /////////////////////////////////
-float-left =
-  float left
-
-float-right =
-  float right
-
-text-center =
-  text-align center
-
-text-left =
-  text-align left
-
-text-right =
-  text-align right
-
 .home-about // SHAME /////////////////////////////////
-  background url('/img/home-about-bg.jpg') center no-repeat
-  background-size cover
-  clearfix()
+  clear fix
   padding-top 6rem
   padding-bottom 6rem
-  {text-center}
+  background url('/img/home-about-bg.jpg') center no-repeat
+  background-size cover
+  text-align center
   
-  +below(1120px)  
+  +below(1120px)
     wrapped(95%)
   
   p
-    color white
     lost-center 500px
+    color white
     
   .title--white
     display block
     
 
 .home-industries
+  wrapped(80%)
   padding-top 6rem
   padding-bottom 6rem
   text-align center
-  wrapped(80%)
   
-  +below(1120px)  
+  +below(1120px)
     wrapped(95%)
     
   &__list
@@ -92,6 +76,7 @@ text-right =
         
     +below(900px)
       lost-column 1/1 1 0 no-flex
+      padding 4rem 2rem
 
     
     &--quote
@@ -101,4 +86,3 @@ text-right =
     &--careers
       background url('/img/home-careers.jpg') center no-repeat
       background-size cover
-
