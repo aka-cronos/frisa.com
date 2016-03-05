@@ -180,15 +180,16 @@ th {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 .unslider-wrap {
   position: relative;
+  overflow: auto;
 }
 .unslider-wrap.unslider-carousel>li {
   float: left;
 }
 .unslider-wrap.unslider-carousel>li img {
+  display: block;
   width: 100%;
 }
 .unslider li,
@@ -1611,6 +1612,7 @@ footer p {
   height: 100vh;
   background-color: #ff6347;
 }
+.mainSlider .unslider,
 .mainSlider .fullSlider,
 .mainSlider ul,
 .mainSlider ul li {
