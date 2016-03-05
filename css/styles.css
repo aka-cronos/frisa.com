@@ -1707,12 +1707,12 @@ footer p {
   width: 100%;
   background-color: rgba(0,0,0,0.5);
 }
-.home-about:after {
+.homeAbout:after {
   content: '';
   display: table;
   clear: both;
 }
-.home-about {
+.homeAbout {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background: url("/img/home-about-bg.jpg") center no-repeat;
@@ -1720,28 +1720,28 @@ footer p {
   text-align: center;
 }
 @media only screen and (max-width: 1120px) {
-  .home-about {
+  .homeAbout {
     padding-left: calc(50% - (95% / 2));
     padding-right: calc(50% - (95% / 2));
   }
 }
-.home-about p {
+.homeAbout p {
   *zoom: 1;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
 }
-.home-about p:before {
+.homeAbout p:before {
   content: '';
   display: table;
 }
-.home-about p:after {
+.homeAbout p:after {
   content: '';
   display: table;
   clear: both;
 }
-.home-about .title--white {
+.homeAbout .title--white {
   display: block;
 }
 .home-industries {
