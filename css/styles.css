@@ -240,6 +240,39 @@ th {
   border-bottom: 4px solid #fff;
   cursor: default;
 }
+.text {
+  color: #7c7c7c;
+  line-height: 1.75;
+}
+.title,
+.sectionHeader-title,
+.sectionHeader-subtitle {
+  color: #7c7c7c;
+  font-size: 2rem;
+  line-height: 1.125;
+  font-weight: 400;
+}
+.title__red,
+.sectionHeader-title__red,
+.sectionHeader-subtitle__red {
+  color: #ce181e;
+}
+.title__small,
+.sectionHeader-title__small,
+.sectionHeader-subtitle__small {
+  font-size: 1.5rem;
+}
+.title__white,
+.sectionHeader-title__white,
+.sectionHeader-subtitle__white {
+  color: #fff;
+}
+.title__slider,
+.sectionHeader-title__slider,
+.sectionHeader-subtitle__slider {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'NeoSans', sans-serif;
@@ -275,38 +308,17 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-.text {
-  color: #7c7c7c;
-  line-height: 1.75;
+.dotList {
+  margin: 0;
+  padding-left: 1rem;
 }
-.title,
-.sectionHeader-title,
-.sectionHeader-subtitle {
-  color: #7c7c7c;
-  font-size: 2rem;
-  line-height: 1.125;
-  font-weight: 400;
-}
-.title__red,
-.sectionHeader-title__red,
-.sectionHeader-subtitle__red {
+.dotList li {
   color: #ce181e;
 }
-.title__small,
-.sectionHeader-title__small,
-.sectionHeader-subtitle__small {
-  font-size: 1.5rem;
-}
-.title__white,
-.sectionHeader-title__white,
-.sectionHeader-subtitle__white {
-  color: #fff;
-}
-.title__slider,
-.sectionHeader-title__slider,
-.sectionHeader-subtitle__slider {
-  font-size: 2.75rem;
-  font-weight: 700;
+.dotList li p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #414141;
 }
 .sectionContent {
   padding-left: calc(50% - (1120px / 2));
@@ -1713,15 +1725,27 @@ footer p {
 .slideContent-actions {
   margin-bottom: 2rem;
 }
-.slide_frisa {
-  background: url("/img/slide_01.jpg") center no-repeat;
-  background-size: cover;
-}
 .unslider-nav {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
+}
+.slide_frisa {
+  background: url("/img/slide_01.jpg") center no-repeat;
+  background-size: cover;
+}
+.slide_contoured-rings {
+  background: url("/img/slide_contoured-rings.jpg") center no-repeat;
+  background-size: cover;
+}
+.slide_hollows {
+  background: url("/img/slide_hollows.jpg") center no-repeat;
+  background-size: cover;
+}
+.slide_discs {
+  background: url("/img/slide_hollows.jpg") center no-repeat;
+  background-size: cover;
 }
 .formContainer input:not([type=submit]),
 .formContainer textarea,
