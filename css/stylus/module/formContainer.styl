@@ -1,0 +1,21 @@
+.formContainer
+  
+  & input:not([type=submit])
+  & textarea
+  & select
+    font-size 1.25rem
+    display block
+    padding 1rem
+    width 100%
+    border 1px solid $frisa__light-grey
+    margin-bottom 1.25rem
+    border-radius .5rem
+    appearance none
+    background transparent
+    color $frisa__grey
+    
+    &::placeholder
+      color $frisa__grey
+  
+  & select
+    background url('/img/select-arrow.png') right 1rem center no-repeat

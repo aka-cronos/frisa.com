@@ -434,7 +434,8 @@ body {
 .btn-sliderDownload,
 .btn-quote,
 .btn-download,
-.btn-materials {
+.btn-materials,
+.btn-submit {
   display: inline-block;
   border-radius: 4px;
   text-align: center;
@@ -458,7 +459,8 @@ body {
 .btn__large,
 .btn-quote,
 .btn-download,
-.btn-materials {
+.btn-materials,
+.btn-submit {
   padding: 0.75rem 2rem;
 }
 .btn__white {
@@ -483,13 +485,15 @@ body {
 }
 .btn__red-onWhite,
 .btn-quote,
-.btn-materials {
+.btn-materials,
+.btn-submit {
   color: #fff;
   background-color: #960a0f;
 }
 .btn__red-onWhite:hover,
 .btn-quote:hover,
-.btn-materials:hover {
+.btn-materials:hover,
+.btn-submit:hover {
   background-color: #ce181e;
 }
 .btn__grey,
@@ -524,6 +528,10 @@ body {
   .btn-materials {
     margin-left: 6rem;
   }
+}
+.btn-submit {
+  border: 0;
+  border-radius: 5px;
 }
 .mainLogo {
   float: left;
@@ -1078,6 +1086,14 @@ footer p {
 }
 .sectionHeader-quality {
   background: url("/img/header-quality.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-about {
+  background: url("/img/about/header-about.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-contact {
+  background: url("/img/contact/header-contact.jpg") center no-repeat;
   background-size: cover;
 }
 .sectionPreview-container:after {
@@ -1706,6 +1722,45 @@ footer p {
   bottom: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
+}
+.formContainer input:not([type=submit]),
+.formContainer textarea,
+.formContainer select {
+  font-size: 1.25rem;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  color: #7c7c7c;
+}
+.formContainer input:not([type=submit])::-webkit-input-placeholder,
+.formContainer textarea::-webkit-input-placeholder,
+.formContainer select::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+.formContainer input:not([type=submit])::-moz-placeholder,
+.formContainer textarea::-moz-placeholder,
+.formContainer select::-moz-placeholder {
+  color: #7c7c7c;
+}
+.formContainer input:not([type=submit]):-ms-input-placeholder,
+.formContainer textarea:-ms-input-placeholder,
+.formContainer select:-ms-input-placeholder {
+  color: #7c7c7c;
+}
+.formContainer input:not([type=submit])::placeholder,
+.formContainer textarea::placeholder,
+.formContainer select::placeholder {
+  color: #7c7c7c;
+}
+.formContainer select {
+  background: url("/img/select-arrow.png") right 1rem center no-repeat;
 }
 .homeAbout:after {
   content: '';
