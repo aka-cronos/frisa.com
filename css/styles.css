@@ -1380,7 +1380,6 @@ footer p {
   color: #7c7c7c;
 }
 .sectionSlider {
-  z-index: 5;
   text-align: right;
 }
 @media only screen and (max-width: 900px) {
@@ -1744,7 +1743,7 @@ footer p {
   background-size: cover;
 }
 .slide_discs {
-  background: url("/img/slide_hollows.jpg") center no-repeat;
+  background: url("/img/slide_discs.jpg") center no-repeat;
   background-size: cover;
 }
 .formContainer input:not([type=submit]),
