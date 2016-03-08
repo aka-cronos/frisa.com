@@ -545,6 +545,22 @@ body {
   border: 0;
   border-radius: 5px;
 }
+.btn-aerospace {
+  position: absolute;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(213,213,213,0.8);
+  border: 0;
+  color: #7c7c7c;
+  font-weight: bold;
+  transition: 350ms all ease-in-out;
+}
+.btn-aerospace:hover {
+  background-color: #ce181e;
+  color: #fff;
+}
 .mainLogo {
   float: left;
 }
@@ -1784,6 +1800,48 @@ footer p {
 }
 .formContainer select {
   background: url("/img/select-arrow.png") right 1rem center no-repeat;
+}
+.aerospace-engine {
+  position: relative;
+  color: #7c7c7c;
+  line-height: 1.75;
+}
+.aerospace-engine img {
+  padding-bottom: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
+}
+.aerospace-engine span {
+  color: #ce181e;
+}
+.aerospace-engine .dotList {
+  position: relative;
+  height: 150px;
+}
+.aerospace-engine .dotList li {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.btn-aerospace.btn-1 {
+  top: 9%;
+  left: 18%;
+}
+.btn-aerospace.btn-2 {
+  top: 11%;
+  left: 53%;
+}
+.btn-aerospace.btn-3 {
+  top: 11%;
+  left: 65%;
+}
+.btn-aerospace.btn-4 {
+  top: 20%;
+  left: 65%;
+}
+.btn-aerospace.btn-5 {
+  top: 20%;
+  right: 13%;
 }
 .homeAbout:after {
   content: '';
