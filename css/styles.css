@@ -1818,10 +1818,9 @@ footer p {
   position: relative;
   height: 150px;
 }
-.aerospace-engine .dotList li {
+.aerospace-engine .engine-description {
   position: absolute;
   top: 0;
-  opacity: 0;
 }
 .btn-aerospace.btn-1 {
   top: 9%;
