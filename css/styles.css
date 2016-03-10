@@ -241,6 +241,8 @@ th {
   cursor: default;
 }
 .text {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   color: #7c7c7c;
   line-height: 1.75;
 }
@@ -272,6 +274,12 @@ th {
 .sectionHeader-subtitle__slider {
   font-size: 2.75rem;
   font-weight: 700;
+}
+.subtitle {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ce181e;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -318,7 +326,7 @@ body {
 .dotList li p {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #414141;
+  color: #7c7c7c;
 }
 .sectionContent {
   padding-left: calc(50% - (1120px / 2));
@@ -1868,6 +1876,14 @@ footer p {
 .btn-aerospace.btn-5 {
   top: 20%;
   right: 13%;
+}
+.contactDirections {
+  padding-left: 150px;
+}
+@media only screen and (max-width: 900px) {
+  .contactDirections {
+    padding-left: 0;
+  }
 }
 .homeAbout:after {
   content: '';
