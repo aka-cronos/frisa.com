@@ -1108,8 +1108,24 @@ footer p {
   background: url("/img/products/header-products.jpg") center no-repeat;
   background-size: cover;
 }
-.sectionHeader-services {
-  background: url("/img/services/header-services.jpg") center no-repeat;
+.sectionHeader-heat-treatment {
+  background: url("/img/services/header-heat-treatment.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-machining {
+  background: url("/img/services/header-machining.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-testing {
+  background: url("/img/services/header-testing.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-product-development {
+  background: url("/img/services/header-product-development.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-logistics {
+  background: url("/img/services/header-logistics.jpg") center no-repeat;
   background-size: cover;
 }
 .sectionHeader-quality {
@@ -1118,6 +1134,10 @@ footer p {
 }
 .sectionHeader-about {
   background: url("/img/about/header-about.jpg") center no-repeat;
+  background-size: cover;
+}
+.sectionHeader-overview {
+  background: url("/img/about/header-overview.jpg") center no-repeat;
   background-size: cover;
 }
 .sectionHeader-contact {
@@ -1460,6 +1480,13 @@ footer p {
   left: 0;
   content: '';
   background-color: rgba(0,0,0,0.8);
+}
+.sectionImage {
+  padding-top: 2rem;
+}
+.sectionImage img {
+  display: block;
+  width: 100%;
 }
 .productCapabilities table {
   width: 100%;
