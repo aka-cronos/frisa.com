@@ -17,7 +17,6 @@ function errorLog(error){
 
 
 // Connect Task
-// Uglifies javascript
 gulp.task('connect', function(){
   connect.server({
     livereload: true,

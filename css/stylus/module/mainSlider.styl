@@ -17,13 +17,16 @@
   & .unslider-arrow
       top calc(50% + 50px)
       transform translateY(-50%)
+      
+      +below(600px)
+        top 90%
 
 .slideContent
   color white
   text-align center
   
 .slideTitle
-  font-size 4.75rem
+  font-size responsive 3rem 4.75rem
   font-weight bold
   text-transform uppercase
   margin-top 0
@@ -31,8 +34,11 @@
   
 .slideSubtitle
   margin-top 0
+  margin-right auto
+  margin-left auto
+  max-width 600px
   font-weight 400
-  font-size 2rem
+  font-size responsive 1.5rem 2rem
   
 .slideContent-actions
   margin-bottom 2rem
