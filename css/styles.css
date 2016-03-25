@@ -573,6 +573,12 @@ body {
   background-color: #ce181e;
   color: #fff;
 }
+@media only screen and (max-width: 600px) {
+  .btn-aerospace {
+    width: 30px;
+    height: 30px;
+  }
+}
 .logo {
   display: block;
 }
@@ -742,7 +748,18 @@ body {
   display: flex;
   text-align: center;
 }
-@media only screen and (max-width: 900px) {
+.subNav.is-scrolled {
+  top: 69px;
+}
+.subNav.is-open .subNav-item {
+  display: block;
+}
+@media only screen and (max-width: 1140px) {
+  .subNav {
+    top: 69px;
+  }
+}
+@media only screen and (max-width: 600px) {
   .subNav {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -755,17 +772,35 @@ body {
   color: rgba(255,255,255,0.6);
   text-decoration: none;
 }
+@media only screen and (max-width: 1140px) {
+  .subNav-item {
+    display: none;
+  }
+}
 .subNav-item:last-child {
   margin-right: 0;
 }
 .subNav-item:hover,
 .subNav-item.active {
+  display: block;
   color: #fff;
 }
 @media only screen and (min-width: 600px) {
   .subNav-item {
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+}
+.subNav-trigger {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ce181e;
+}
+@media only screen and (min-width: 1140px) {
+  .subNav-trigger {
+    display: none;
   }
 }
 .subNav-secondary {
@@ -1634,6 +1669,7 @@ footer p {
 }
 .facilities-item {
   width: calc(99.99% * 1/4 - (16px - 16px * 1/4));
+  overflow: hidden;
 }
 .facilities-item:nth-child(1n) {
   float: left;
@@ -1904,33 +1940,66 @@ footer p {
   color: #ce181e;
 }
 .aerospace-engine .dotList {
-  position: relative;
-  height: 150px;
+  min-height: 150px;
 }
 .aerospace-engine .engine-description {
-  position: absolute;
-  top: 0;
-  opacity: 0;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .aerospace-engine .engine-description {
+    display: block;
+  }
+}
+.aerospace-engine .engine-description.active {
+  display: block;
 }
 .btn-aerospace.btn-1 {
   top: 9%;
   left: 18%;
 }
+@media only screen and (max-width: 600px) {
+  .btn-aerospace.btn-1 {
+    top: 2%;
+  }
+}
 .btn-aerospace.btn-2 {
   top: 11%;
   left: 53%;
+}
+@media only screen and (max-width: 600px) {
+  .btn-aerospace.btn-2 {
+    top: 3%;
+    left: 50%;
+  }
 }
 .btn-aerospace.btn-3 {
   top: 11%;
   left: 65%;
 }
+@media only screen and (max-width: 600px) {
+  .btn-aerospace.btn-3 {
+    top: 4%;
+    left: 60%;
+  }
+}
 .btn-aerospace.btn-4 {
   top: 20%;
   left: 65%;
 }
+@media only screen and (max-width: 600px) {
+  .btn-aerospace.btn-4 {
+    top: 7%;
+    left: 60%;
+  }
+}
 .btn-aerospace.btn-5 {
   top: 20%;
   right: 13%;
+}
+@media only screen and (max-width: 600px) {
+  .btn-aerospace.btn-5 {
+    top: 6%;
+  }
 }
 .contactDirections {
   padding-left: 150px;

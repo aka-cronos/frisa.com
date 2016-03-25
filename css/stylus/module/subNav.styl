@@ -4,7 +4,16 @@
   display flex
   text-align center
   
-  +below(900px)
+  &.is-scrolled
+    top 69px
+  
+  &.is-open .subNav-item
+    display block
+    
+  +below($desktop)
+    top 69px
+  
+  +below($mobile)
     flex-direction column
   
   &-item
@@ -13,13 +22,27 @@
     color rgba(white, .6)
     text-decoration none
     
+    +below($desktop)
+      display none
+          
     &:last-child
       margin-right 0
 
     &:hover
     &.active
+      display block
       color white
       
     +above(600px)
       padding-right 1rem
       padding-left 1rem
+      
+.subNav-trigger
+  padding-top 1rem
+  padding-bottom 1rem
+  color white
+  cursor pointer
+  background-color $frisa__red
+  
+  +above($desktop)
+    display none

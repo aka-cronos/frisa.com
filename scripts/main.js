@@ -64,4 +64,29 @@ $(document).ready(function() {
   $('.subMenu-trigger').click(function () {
     $('.products-subNav').toggleClass('is-open');
   });
+
+  // Open/close subNav
+  $('.subNav-trigger').click(function () {
+    $('.subNav').toggleClass('is-open');
+  });
+
+  // Function for engine section in aerospace
+  $('.btn-aerospace').click(function () {
+    $('.engine-description').removeClass('active');
+  });
+  $('.btn-1').click(function () {
+    $('.description-1').toggleClass('active');
+  });
+  $('.btn-2').click(function () {
+    $('.description-2').toggleClass('active');
+  });
+  $('.btn-3').click(function () {
+    $('.description-3').toggleClass('active');
+  });
+  $('.btn-4').click(function () {
+    $('.description-4').toggleClass('active');
+  });
+  $('.btn-5').click(function () {
+    $('.description-5').toggleClass('active');
+  });
 });
