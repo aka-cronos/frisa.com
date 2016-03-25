@@ -824,7 +824,7 @@ body {
 .products-subNav.is-scrolled {
   top: 69px;
 }
-.products-subNav.is-active .products-subNav-item {
+.products-subNav.is-open .products-subNav-item {
   display: block;
 }
 @media only screen and (max-width: 1140px) {
@@ -860,6 +860,18 @@ body {
   .products-subNav-item {
     margin-right: 2rem;
     margin-left: 2rem;
+  }
+}
+.subMenu-trigger {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #414141;
+  cursor: pointer;
+  background-color: #d5d5d5;
+}
+@media only screen and (min-width: 1140px) {
+  .subMenu-trigger {
+    display: none;
   }
 }
 footer:after {

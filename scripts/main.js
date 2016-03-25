@@ -61,7 +61,7 @@ $(document).ready(function() {
   });
 
   // Open/close products-SubNav
-  $('.products-SubNav').click(function () {
-    $('.products-SubNav').toggleClass('is-active');
+  $('.subMenu-trigger').click(function () {
+    $('.products-subNav').toggleClass('is-open');
   });
 });

@@ -13,7 +13,7 @@
   &.is-scrolled
     top 69px
   
-  &.is-active .products-subNav-item
+  &.is-open .products-subNav-item
     display block
     
   +below($desktop)
@@ -40,3 +40,14 @@
     +above($mobile)
       margin-right 2rem
       margin-left 2rem
+
+.subMenu-trigger
+  padding-top 1rem
+  padding-bottom 1rem
+  color $frisa__dark-grey
+  cursor pointer
+  background-color $frisa__light-grey
+  
+  +above($desktop)
+    display none
+  
