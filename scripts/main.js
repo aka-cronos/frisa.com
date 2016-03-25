@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Main Slider in home
   $('.fullSlider').unslider({
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     delay: 6000,
     nav: true,
@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   // Open and close details
-  $('.detail').click(function () {    
+  $('.detail').click(function () {
     if ($(this).hasClass('is-open')) {
       $(this)
         .removeClass('is-open')
@@ -34,7 +34,6 @@ $(document).ready(function() {
         .removeClass('is-open')
         .find('span')
         .hide('1000');
-      
       $(this)
         .addClass('is-open')
         .find('span')
@@ -49,9 +48,15 @@ $(document).ready(function() {
     $unslider.toggleClass('isFixed');
   });
 
-
+  // Fix subNav on scroll
   $(window).on('scroll', function () {
     var $subNav = $('#products-SubNav');
-    $subNav.toggleClass('is-fixed', $(window).scrollTop() > 99);
+    $subNav.toggleClass('isFixed', $(window).scrollTop() > 99);
+  });
+
+  // Change logo image with scroll in nav
+  $(window).scroll(function(){
+    var $mainHeader = $('.mainHeader');
+    $mainHeader.toggleClass('isScrolled', $(window).scrollTop() > 0);
   });
 });

@@ -329,8 +329,8 @@ body {
   color: #7c7c7c;
 }
 .sectionContent {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -570,103 +570,140 @@ body {
   background-color: #ce181e;
   color: #fff;
 }
-.mainLogo {
-  float: left;
-}
-.mainLogo,
-.efrisaLogo {
+.logo {
   display: block;
-  width: 76px;
 }
-.mainLogo img,
-.efrisaLogo img {
+.logo img {
   display: block;
   width: 100%;
 }
-.logoFooter {
-  display: block;
+.logo__mainHeader {
+  float: left;
+  width: 75px;
+}
+@media only screen and (max-width: 1140px) {
+  .logo__mainHeader {
+    display: none;
+  }
+}
+.logo__mainHeader2 {
+  float: left;
+  width: 120px;
+}
+@media only screen and (min-width: 1140px) {
+  .logo__mainHeader2 {
+    display: none;
+  }
+}
+.logo__efrisa {
+  width: 75px;
+}
+.logo__footer {
   margin-bottom: 2rem;
   max-width: 100px;
 }
-.logoFooter img {
-  width: 100%;
-}
 @media only screen and (max-width: 900px) {
-  .logoFooter {
+  .logo__footer {
     margin-right: auto;
     margin-left: auto;
   }
 }
-.mainHeader:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .mainHeader {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  border-top: 3px solid #7c7c7c;
   background-color: rgba(206,24,30,0.9);
+  border-top: 3px solid #7c7c7c;
   z-index: 10;
 }
-.mainHeader__isFixed {
-  position: fixed;
-}
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1140px) {
   .mainHeader {
-    padding-left: calc(50% - (95% / 2));
-    padding-right: calc(50% - (95% / 2));
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
-.mainHeader-logo,
-.efrisa-logo {
-  display: block;
-  float: left;
-  width: 76px;
+.mainHeader.isFixed {
+  position: fixed;
 }
-.mainHeader-logo img,
-.efrisa-logo img {
-  display: block;
-  width: 100%;
+.mainHeader.isScrolled .logo__mainHeader {
+  display: none;
 }
-.mainNav:after {
-  content: '';
-  display: table;
-  clear: both;
+.mainHeader.isScrolled .logo__mainHeader2 {
+  display: block;
+}
+.mainHeader.isScrolled .mainNav-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .mainNav {
-  float: left;
-  margin-left: 100px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.mainNav-menu:after {
-  content: '';
-  display: table;
-  clear: both;
+@media only screen and (max-width: 1140px) {
+  .mainNav {
+    display: none;
+  }
 }
 .mainNav-menu {
+  float: left;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .mainNav-menuItem {
   position: relative;
-  float: left;
-  margin-right: 1em;
-  margin-left: 1em;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 99px;
-}
-.mainNav-menuItem:first-child {
-  margin-left: 0;
+  display: inline-block;
 }
 .mainNav-menuItem:hover .mainNav-dropdown {
   display: block;
+}
+.mainNav-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  margin-left: 2rem;
+}
+.mainNav-link {
+  position: relative;
+  display: block;
+  padding: 40px 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.mainNav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  content: '';
+  transition: 350ms all ease;
+}
+.mainNav-link.active:after,
+.mainNav-link:hover:after {
+  height: 4px;
+  content: '';
 }
 .mainNav-dropdown {
   position: absolute;
@@ -693,88 +730,9 @@ body {
   display: block;
   text-decoration: none;
 }
-.mainNav-link {
-  position: relative;
-  padding: 2.5em 0.5em;
-  display: block;
-  color: #fff;
-  text-decoration: none;
-}
-.mainNav-link:before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 0;
-  background-color: #fff;
-  content: '';
-  transition: 350ms all ease;
-}
-.mainNav-link.active:before,
-.mainNav-link:hover:before {
-  height: 4px;
-  content: '';
-}
-.mainNav-actions {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 99px;
-}
-.search {
-  display: none;
-}
-.basic-link {
-  color: #fff;
-  font-weight: 400;
-}
-@media only screen and (max-width: 1120px) {
-  .mainNav,
-  .mainNav-actions {
-    display: none;
-  }
-}
-.burguerIcon {
-  position: relative;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-}
-.burguerIcon:before,
-.burguerIcon:after {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  content: '';
-  top: -0.75rem;
-  left: 0;
-  background-color: inherit;
-}
-.burguerIcon:after {
-  top: 0.75rem;
-}
-@media only screen and (min-width: 1120px) {
-  .burguerIcon {
-    display: none;
-  }
-}
-.mainNav-trigger {
-  float: right;
-  padding: 0;
-  margin-top: 1.75rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 0;
-  background: transparent;
-}
 .subNav {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   background-color: #7c7c7c;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -808,8 +766,8 @@ body {
   }
 }
 .subNav-secondary {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   background-color: #ededed;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -844,8 +802,8 @@ body {
   }
 }
 .products-subNav {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -854,7 +812,7 @@ body {
           justify-content: center;
   text-align: center;
 }
-.products-subNav.is-fixed {
+.products-subNav.isFixed {
   position: fixed;
   top: 0;
   right: 0;
@@ -1171,8 +1129,8 @@ footer p {
   clear: both;
 }
 .sectionPreview-container {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
@@ -1479,18 +1437,18 @@ footer p {
   border: 0;
   background: transparent;
 }
-.isFixed {
+.unslider.isFixed {
   position: fixed;
   top: 10%;
   right: 10%;
   left: 10%;
   z-index: 15;
 }
-.isFixed .gallery-close {
+.unslider.isFixed .gallery-close {
   z-index: 5;
   display: block;
 }
-.isFixed:before {
+.unslider.isFixed:before {
   position: fixed;
   top: 0;
   right: 0;
@@ -1623,8 +1581,8 @@ footer p {
   clear: both;
 }
 .facilities {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1825,8 +1783,8 @@ footer p {
   width: 100%;
   background-color: rgba(0,0,0,0.5);
 }
-.slide_frisa {
-  background: url("/img/slide_01.jpg") center no-repeat;
+.slide_frisaExpress {
+  background: url("/img/slide_frisa-express.jpg") center no-repeat;
   background-size: cover;
 }
 .slide_contoured-rings {
@@ -1948,8 +1906,8 @@ footer p {
   clear: both;
 }
 .materials {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
   padding-bottom: 6rem;
 }
 .materials-table {
@@ -2205,4 +2163,8 @@ footer p {
 }
 .home-actions p {
   font-size: 1.5rem;
+}
+.basic-link {
+  color: #fff;
+  font-weight: 400;
 }

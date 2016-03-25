@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <nav class="mainHeader mainHeader__isFixed">
-      <a class="mainHeader-logo" href="/">
+    <header class="mainHeader isFixed">
+      <a class="logo logo__mainHeader" href="/">
         <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
-
-      <button class="mainNav-trigger" >
-        <div class="burguerIcon"></div>
-      </button>
-  
-      <nav class="mainNav slinky-menu">
+      
+      <a class="logo logo__mainHeader2" href="/">
+        <img src="/img/frisa-logo-2.png" alt="Frisa logo">
+      </a>  
+      
+      <nav class="mainNav">
         <ul class="mainNav-menu">
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/products/">Products</a>
@@ -68,7 +68,7 @@
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/about/overview.html">About</a>
             <ul class="mainNav-dropdown">
-              <li><a href="/about/">Overview</a></li>
+              <li><a href="/about/overview.html">Overview</a></li>
               <li><a href="/about/facilities.html">Facilities</a></li>
               <li><a href="/about/fundacion-frisa.html">Social Responsability</a></li>
               <li><a href="/about/downloads.html">Downloads</a></li>
@@ -85,21 +85,20 @@
             </ul>
           </li>
         </ul>
+
+        <div class="mainNav-actions">
+          <a class="logo logo__efrisa" href="#">
+            <img src="/img/efrisa-logo.png" alt="eFrisa logo">
+          </a>
+          <a class="btn-lang" href="#">Español</a>
+        </div>
       </nav>
-      
-      <div class="mainNav-actions">
-        <a class="efrisa-logo" href="#">
-          <img src="/img/efrisa-logo.png" alt="eFrisa logo">
-        </a>
-        <a class="search" href="#">Search</a>
-        <a class="btn-lang" href="#">Español</a>
-      </div>
-    </nav>
+    </header>
 
     <section class="mainSlider">
       <div class="fullSlider">
         <ul>
-          <li data-nav="Frisa Express" class="slide_frisa">
+          <li data-nav="Frisa Express" class="slide_frisaExpress">
             <div class="slideContent">
               <h2 class="slideTitle">Timing is everything</h2>
               <h3 class="slideSubtitle">Frisa Express offers fast turnaround <br> with quick delivery schedules on selected products.We ship in as little as 5 days.</h3>
@@ -256,7 +255,7 @@
 
     <footer>
       <div class="container">      
-        <a href="#" class="logoFooter">
+        <a href="#" class="logo logo__footer">
           <img src="/img/frisa-logo-2.png" alt="">
         </a>
         <div class="social">
