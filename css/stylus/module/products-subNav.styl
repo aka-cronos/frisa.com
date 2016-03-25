@@ -2,17 +2,24 @@
   wrapped()
   display flex
   justify-content center
+  position fixed
+  top 102px
+  right 0
+  left 0
+  z-index 5
+  background-color white
   text-align center
   
-  &.isFixed
-    position fixed
-    top 0
-    right 0
-    left 0
-    z-index 10
-    background-color white
+  &.is-scrolled
+    top 69px
   
-  +below(900px)
+  &.is-active .products-subNav-item
+    display block
+    
+  +below($desktop)
+    top 69px
+  
+  +below($mobile)
     flex-direction column
   
   &-item
@@ -21,11 +28,15 @@
     padding-bottom 1rem
     color $frisa__grey
     text-decoration none
+    
+    +below($desktop)
+      display none
 
     &:hover
     &.active
+      display block
       color $frisa__dark-grey
       
-    +above(600px)
+    +above($mobile)
       margin-right 2rem
       margin-left 2rem

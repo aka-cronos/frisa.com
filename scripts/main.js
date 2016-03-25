@@ -45,18 +45,23 @@ $(document).ready(function() {
   // Open and close sectionGallery
   $('#gallery-open, #gallery-close').click(function() {
     var $unslider = $('.unslider');
-    $unslider.toggleClass('isFixed');
+    $unslider.toggleClass('is-fixed');
   });
 
   // Fix subNav on scroll
   $(window).on('scroll', function () {
     var $subNav = $('#products-SubNav');
-    $subNav.toggleClass('isFixed', $(window).scrollTop() > 99);
+    $subNav.toggleClass('is-scrolled', $(window).scrollTop() > 0);
   });
 
   // Change logo image with scroll in nav
   $(window).scroll(function(){
     var $mainHeader = $('.mainHeader');
-    $mainHeader.toggleClass('isScrolled', $(window).scrollTop() > 0);
+    $mainHeader.toggleClass('is-scrolled', $(window).scrollTop() > 0);
+  });
+
+  // Open/close products-SubNav
+  $('.products-SubNav').click(function () {
+    $('.products-SubNav').toggleClass('is-active');
   });
 });

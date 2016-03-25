@@ -363,6 +363,9 @@ body {
     margin-right: 0;
   }
 }
+.sectionContent__products {
+  margin-top: 14rem;
+}
 .productsDetails {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -629,20 +632,20 @@ body {
   .mainHeader {
     padding-left: calc(50% - (90% / 2));
     padding-right: calc(50% - (90% / 2));
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 69px;
   }
 }
-.mainHeader.isFixed {
+.mainHeader.is-fixed {
   position: fixed;
+  top: 0;
 }
-.mainHeader.isScrolled .logo__mainHeader {
+.mainHeader.is-scrolled .logo__mainHeader {
   display: none;
 }
-.mainHeader.isScrolled .logo__mainHeader2 {
+.mainHeader.is-scrolled .logo__mainHeader2 {
   display: block;
 }
-.mainHeader.isScrolled .mainNav-link {
+.mainHeader.is-scrolled .mainNav-link {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -810,17 +813,26 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-}
-.products-subNav.isFixed {
   position: fixed;
-  top: 0;
+  top: 102px;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 5;
   background-color: #fff;
+  text-align: center;
 }
-@media only screen and (max-width: 900px) {
+.products-subNav.is-scrolled {
+  top: 69px;
+}
+.products-subNav.is-active .products-subNav-item {
+  display: block;
+}
+@media only screen and (max-width: 1140px) {
+  .products-subNav {
+    top: 69px;
+  }
+}
+@media only screen and (max-width: 600px) {
   .products-subNav {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -834,8 +846,14 @@ body {
   color: #7c7c7c;
   text-decoration: none;
 }
+@media only screen and (max-width: 1140px) {
+  .products-subNav-item {
+    display: none;
+  }
+}
 .products-subNav-item:hover,
 .products-subNav-item.active {
+  display: block;
   color: #414141;
 }
 @media only screen and (min-width: 600px) {
@@ -1441,18 +1459,18 @@ footer p {
   border: 0;
   background: transparent;
 }
-.unslider.isFixed {
+.unslider.is-fixed {
   position: fixed;
   top: 10%;
   right: 10%;
   left: 10%;
   z-index: 15;
 }
-.unslider.isFixed .gallery-close {
+.unslider.is-fixed .gallery-close {
   z-index: 5;
   display: block;
 }
-.unslider.isFixed:before {
+.unslider.is-fixed:before {
   position: fixed;
   top: 0;
   right: 0;
