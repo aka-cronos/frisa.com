@@ -1123,6 +1123,10 @@ footer p {
   background: url("/img/contact/header-contact.jpg") center no-repeat;
   background-size: cover;
 }
+.sectionHeader-materials {
+  background: url("/img/header-materials.jpg") center no-repeat;
+  background-size: cover;
+}
 .sectionPreview-container:after {
   content: '';
   display: table;
@@ -1458,11 +1462,17 @@ footer p {
   background-color: rgba(0,0,0,0.8);
 }
 .sectionImage {
+  overflow: hidden;
   padding-top: 2rem;
 }
 .sectionImage img {
   display: block;
   width: 100%;
+  transition: 350ms all ease-in-out;
+}
+.sectionImage:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .productCapabilities table {
   width: 100%;
