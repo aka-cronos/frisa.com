@@ -1,23 +1,20 @@
-.downloads
+.downloads-item
+  position relative
+  display block
+  padding-top .5rem
+  padding-bottom .5rem
+  text-decoration none
+  color $frisa__grey
+  border-top 1px solid $frisa__light-grey
   
-  a
-    position relative
-    display block
-    padding-top .5rem
-    padding-bottom .5rem
-    text-decoration none
-    color $frisa__grey
-    border-top 1px solid $frisa__light-grey
+  &:last-child
+    border-bottom 1px solid $frisa__light-grey
     
-    &:last-child
-      border-bottom 1px solid $frisa__light-grey
-      
-    &:after
-      position absolute
-      top 2
-      right 0
-      overflow auto
-      width 22px
-      height 23px
-      content url(/img/icon-download.png)
-      
+  &:after
+    position absolute
+    top 2
+    right 0
+    overflow auto
+    width 22px
+    height 23px
+    content url(/img/icon-download.png)
