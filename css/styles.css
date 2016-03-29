@@ -737,22 +737,18 @@ body {
 .mobileNav {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 100%;
   padding-top: 69px;
   width: 100vw;
   height: 100vh;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   z-index: 9;
   background-color: #fff;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   transition: 350ms all ease-in-out;
 }
 .mobileNav.is-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .mobileNav-menu {
   margin: 0;
@@ -774,20 +770,18 @@ body {
 .mobileNav-dropdown {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 100%;
   margin: 0;
   padding: 69px 0 0 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #fff;
   list-style: none;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   transition: 350ms all ease-in-out;
 }
 .mobileNav-dropdown.is-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .mobileNav-trigger {
   padding: 0;
@@ -1641,9 +1635,8 @@ footer p {
 }
 .downloads-item:after {
   position: absolute;
-  top: 2;
+  top: 6px;
   right: 0;
-  overflow: auto;
   width: 22px;
   height: 23px;
   content: url("/img/icon-download.png");
@@ -2214,14 +2207,17 @@ footer p {
 .materials thead {
   color: #ce181e;
 }
-.materials thead th {
-  font-weight: 600;
-}
 .materials th,
 .materials td {
   border: 1px solid #d5d5d5;
   padding: 0.25rem 2rem;
   width: 25%;
+}
+@media only screen and (max-width: 600px) {
+  .materials th,
+  .materials td {
+    padding: 0.25rem;
+  }
 }
 .materials th:first-child,
 .materials td:first-child {
@@ -2231,8 +2227,21 @@ footer p {
 .materials td:last-child {
   border-right: 0;
 }
+.materials th {
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .materials th {
+    font-size: 0.825rem;
+  }
+}
 .materials td {
   font-size: 0.825rem;
+}
+@media only screen and (max-width: 600px) {
+  .materials td {
+    font-size: 0.7rem;
+  }
 }
 .homeAbout:after {
   content: '';
