@@ -989,10 +989,14 @@ footer p {
   padding-left: calc(50% - (920px / 2));
   padding-right: calc(50% - (920px / 2));
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1140px) {
   .container {
     padding-left: calc(50% - (90% / 2));
     padding-right: calc(50% - (90% / 2));
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
     text-align: center;
   }
 }
@@ -1486,11 +1490,6 @@ footer p {
   background: url("/img/industries/windpower-preview.jpg") center no-repeat;
   background-size: cover;
 }
-@media only screen and (max-width: 900px) {
-  .sectionDescription {
-    text-align: center;
-  }
-}
 .sectionDetails .detail {
   position: relative;
   margin: 0;
@@ -1514,7 +1513,6 @@ footer p {
   top: 3px;
   right: 0;
   display: block;
-  overflow: auto;
   width: 24px;
   height: 24px;
   content: url("/img/arrow-down.png");
@@ -2194,6 +2192,12 @@ footer p {
   padding-left: calc(50% - (1140px / 2));
   padding-right: calc(50% - (1140px / 2));
   padding-bottom: 6rem;
+}
+@media only screen and (max-width: 1140px) {
+  .materials {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
 }
 .materials-table {
   table-layout: fixed;
