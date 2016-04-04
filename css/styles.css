@@ -2058,9 +2058,8 @@ footer p {
   background: url("/img/slide_blocks.jpg") center no-repeat;
   background-size: cover;
 }
-.formContainer input:not([type=submit]),
-.formContainer textarea,
-.formContainer select {
+.formContainer .formInput,
+.formContainer .inputFile {
   font-size: 1.25rem;
   display: block;
   padding: 1rem;
@@ -2074,28 +2073,31 @@ footer p {
   background: transparent;
   color: #7c7c7c;
 }
-.formContainer input:not([type=submit])::-webkit-input-placeholder,
-.formContainer textarea::-webkit-input-placeholder,
-.formContainer select::-webkit-input-placeholder {
+.formContainer .formInput::-webkit-input-placeholder,
+.formContainer .inputFile::-webkit-input-placeholder {
   color: #7c7c7c;
 }
-.formContainer input:not([type=submit])::-moz-placeholder,
-.formContainer textarea::-moz-placeholder,
-.formContainer select::-moz-placeholder {
+.formContainer .formInput::-moz-placeholder,
+.formContainer .inputFile::-moz-placeholder {
   color: #7c7c7c;
 }
-.formContainer input:not([type=submit]):-ms-input-placeholder,
-.formContainer textarea:-ms-input-placeholder,
-.formContainer select:-ms-input-placeholder {
+.formContainer .formInput:-ms-input-placeholder,
+.formContainer .inputFile:-ms-input-placeholder {
   color: #7c7c7c;
 }
-.formContainer input:not([type=submit])::placeholder,
-.formContainer textarea::placeholder,
-.formContainer select::placeholder {
+.formContainer .formInput::placeholder,
+.formContainer .inputFile::placeholder {
   color: #7c7c7c;
 }
 .formContainer select {
   background: url("/img/select-arrow.png") right 1rem center no-repeat;
+}
+.formContainer .inputFile {
+  cursor: pointer;
+}
+.formContainer .inputFile__hidden {
+  display: none;
+  cursor: pointer;
 }
 .aerospace-engine {
   position: relative;

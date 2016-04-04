@@ -1,8 +1,7 @@
 .formContainer
   
-  & input:not([type=submit])
-  & textarea
-  & select
+  .formInput
+  .inputFile
     font-size 1.25rem
     display block
     padding 1rem
@@ -19,3 +18,10 @@
   
   & select
     background url('/img/select-arrow.png') right 1rem center no-repeat
+    
+  & .inputFile
+    cursor pointer
+
+  & .inputFile__hidden
+    display none
+    cursor pointer

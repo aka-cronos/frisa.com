@@ -118,14 +118,16 @@
 
         <div class="formContainer">
           <form class="form">
-            <input name="name" type="text" placeholder="Name*" required>
-            <input name="company" type="text" placeholder="Company*" required>
-            <input name="mail" type="mail" placeholder="eMail" required>
-            <input name="phone" type="text" placeholder="Phone" required>
-            <select id="country" name="country"></select>
-            <select name="state" id="state"></select>
-            <input name="industry" type="text" placeholder="Industry" required>
-            <select name="product" id="">
+            <input class="formInput" name="name" type="text" placeholder="Name*" required>
+            <input class="formInput" name="company" type="text" placeholder="Company*" required>
+            <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
+            <input class="formInput" name="phone" type="text" placeholder="Phone" required>
+            <select class="formInput" id="country" name="country"></select>
+            <select class="formInput" name="state" id="state">
+              <option value="">Select State</option>
+            </select>
+            <input class="formInput" name="industry" type="text" placeholder="Industry" required>
+            <select class="formInput" name="product" id="">
               <option value="">Product</option>
               <option value="">Rolled Rings</option>
               <option value="">Contour Rings</option>
@@ -135,7 +137,9 @@
               <option value="">Discs</option>
               <option value="">Pot Die Forgings</option>
             </select>    
-            <textarea name="message" cols="30" rows="5" placeholder="Comments / Needs"></textarea>
+            <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs"></textarea>
+            <input id="inputFile" class="inputFile" name="file" type="text" placeholder="Add File">
+            <input id="inputFile__hidden" class="inputFile__hidden" type="file" name="file">
             <input class="btn-submit" type="submit" name="send" value="Submit">
           </form>
         </div>

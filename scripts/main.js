@@ -110,4 +110,14 @@ $(document).ready(function() {
   $('.btn-5').click(function () {
     $('.description-5').toggleClass('active');
   });
+
+  // Input file function
+  $('#inputFile').click(function(){
+    $('#inputFile__hidden').click();
+  });
+  $('#inputFile__hidden').on('change', function(){
+    $('#inputFile')
+    .val($('#inputFile__hidden')
+    .val().split('\\').pop());
+  });
 });
