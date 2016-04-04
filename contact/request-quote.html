@@ -122,18 +122,8 @@
             <input name="company" type="text" placeholder="Company*" required>
             <input name="mail" type="mail" placeholder="eMail" required>
             <input name="phone" type="text" placeholder="Phone" required>
-            <select name="Country" id="">
-              <option value="">Country</option>
-              <option value="">Option 1</option>
-              <option value="">Option 2</option>
-              <option value="">Option 3</option>
-            </select>
-            <select name="state" id="">
-              <option value="">State</option>
-              <option value="">Option 1</option>
-              <option value="">Option 2</option>
-              <option value="">Option 3</option>
-            </select>    
+            <select id="country" name="country"></select>
+            <select name="state" id="state"></select>
             <input name="industry" type="text" placeholder="Industry" required>
             <select name="product" id="">
               <option value="">Product</option>
@@ -293,6 +283,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/scripts/unslider.min.js"></script>
+    <script src="/scripts/country-states.js"></script>
     <script src="/scripts/main.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        populateCountries("country", "state");
+      });
+    </script>
   </body>
 </html>
