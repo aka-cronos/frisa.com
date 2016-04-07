@@ -2072,7 +2072,8 @@ footer p {
   background-size: cover;
 }
 .formContainer .formInput,
-.formContainer .inputFile {
+.formContainer .inputFile,
+.formContainer .inputSelect {
   font-size: 1.25rem;
   display: block;
   padding: 1rem;
@@ -2087,22 +2088,26 @@ footer p {
   color: #7c7c7c;
 }
 .formContainer .formInput::-webkit-input-placeholder,
-.formContainer .inputFile::-webkit-input-placeholder {
+.formContainer .inputFile::-webkit-input-placeholder,
+.formContainer .inputSelect::-webkit-input-placeholder {
   color: #7c7c7c;
 }
 .formContainer .formInput::-moz-placeholder,
-.formContainer .inputFile::-moz-placeholder {
+.formContainer .inputFile::-moz-placeholder,
+.formContainer .inputSelect::-moz-placeholder {
   color: #7c7c7c;
 }
 .formContainer .formInput:-ms-input-placeholder,
-.formContainer .inputFile:-ms-input-placeholder {
+.formContainer .inputFile:-ms-input-placeholder,
+.formContainer .inputSelect:-ms-input-placeholder {
   color: #7c7c7c;
 }
 .formContainer .formInput::placeholder,
-.formContainer .inputFile::placeholder {
+.formContainer .inputFile::placeholder,
+.formContainer .inputSelect::placeholder {
   color: #7c7c7c;
 }
-.formContainer select {
+.formContainer .inputSelect {
   background: url("/img/select-arrow.png") right 1rem center no-repeat;
 }
 .formContainer .inputFile {

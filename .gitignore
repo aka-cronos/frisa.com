@@ -1,3 +1,5 @@
 config.codekit
 .DS_Store
 /node_modules
+/ws
+/_db
