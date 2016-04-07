@@ -5,7 +5,21 @@
   
   +below($desktop)
     wrapped(90%)
-   
+    
+  &-header
+    display flex
+    align-items flex-start
+    justify-content space-between
+    
+    .title
+      margin-top 0
+
+    .btn-download
+      margin-bottom 0
+    
+    +below($mobile)
+      flex-direction column
+
   &-table
     table-layout fixed
     text-align left
@@ -13,7 +27,7 @@
     width 100%
     
   .title
-    margin-bottom 0
+    margin-bottom 1rem
     
   thead
     color $frisa__red
