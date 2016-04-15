@@ -866,7 +866,7 @@ body {
   right: 2rem;
   width: 20px;
   height: 20px;
-  content: url("/img/arrow-down2.png");
+  content: url("/img/arrow-down__white.png");
 }
 @media only screen and (min-width: 1140px) {
   .subNav-trigger {
@@ -932,6 +932,10 @@ body {
 .products-subNav.is-open .products-subNav-item {
   display: block;
 }
+.products-subNav.is-open .subMenu-trigger:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 @media only screen and (max-width: 1140px) {
   .products-subNav {
     top: 69px;
@@ -968,11 +972,20 @@ body {
   }
 }
 .subMenu-trigger {
+  position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #414141;
   cursor: pointer;
   background-color: #d5d5d5;
+}
+.subMenu-trigger:after {
+  position: absolute;
+  top: 14px;
+  right: 2rem;
+  width: 20px;
+  height: 20px;
+  content: url("/img/arrow-down__red.png");
 }
 @media only screen and (min-width: 1140px) {
   .subMenu-trigger {
