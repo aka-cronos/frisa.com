@@ -8,17 +8,17 @@
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
-  
+
   <body>
     <header class="mainHeader is-fixed">
       <a class="logo logo__mainHeader" href="/">
         <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
-      
+
       <a class="logo logo__mainHeader2" href="/">
         <img src="/img/frisa-logo-2.png" alt="Frisa logo">
-      </a>  
-      
+      </a>
+
       <nav class="mainNav">
         <ul class="mainNav-menu">
           <li class="mainNav-menuItem">
@@ -34,7 +34,7 @@
               <li><a href="/products/pot-die-forgings.html">Pot Die Forgings</a></li>
             </ul>
           </li>
-          
+
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/industries/">Industries</a>
             <ul class="mainNav-dropdown">
@@ -60,8 +60,8 @@
               <li><a href="/services/product-development.html">Product Development</a></li>
               <li><a href="/services/logistics.html">Logistics</a></li>
             </ul>
-          </li>        
-          
+          </li>
+
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/quality.html">Quality</a>
           </li>
@@ -98,7 +98,7 @@
         <img src="/img/mobileNav-trigger.png" alt="">
       </button>
     </header>
-    
+
     <header class="sectionHeader sectionHeader-contact">
       <h2 class="sectionHeader-title">Contact Us</h2>
       <h1 class="sectionHeader-subtitle">How can we help you?</h1>
@@ -120,19 +120,19 @@
         <p class="text">Fields marked with an asterisk (*) are required.</p>
 
         <div class="formContainer">
-          <form class="form">
+          <form class="form" action="general-inquiry-send-mail.php" method="post">
             <input class="formInput" name="name" type="text" placeholder="Name*" required>
             <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
             <select class="inputSelect" name="service" id="">
               <option value="">About*</option>
-              <option value="">Our Products</option>
-              <option value="">Our Quality certificates & awards</option>
-              <option value="">Our Sales network</option>
-              <option value="">Our value added services</option>
-              <option value="">Logistics and Exports</option>
-              <option value="">Frisa Express service</option>
-              <option value="">eFrisa</option>
-              <option value="">Fundacion Frisa</option>
+              <option value="Our Products">Our Products</option>
+              <option value="Our Quality certificates & awards">Our Quality certificates & awards</option>
+              <option value="Our Sales network">Our Sales network</option>
+              <option value="Our value added services">Our value added services</option>
+              <option value="Logistics and Exports">Logistics and Exports</option>
+              <option value="Frisa Express service">Frisa Express service</option>
+              <option value="eFrisa">eFrisa</option>
+              <option value="Fundacion Frisa">Fundacion Frisa</option>
             </select>
             <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments"></textarea>
             <input class="btn-submit" type="submit" name="send" value="Submit">
@@ -167,7 +167,7 @@
           Long Beach, California <br>
           +1 (562) 983 8138
         </p>
-        <p class="text">        
+        <p class="text">
           The Woodlands, Texas, USA <br>
           +1 (832) 246 8801
         </p>
@@ -180,7 +180,7 @@
     </section>
 
     <footer>
-      <div class="container">      
+      <div class="container">
         <a href="/" class="logo logo__footer">
           <img src="/img/frisa-logo-2.png" alt="">
         </a>

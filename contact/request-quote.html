@@ -8,17 +8,17 @@
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
-  
+
   <body>
     <header class="mainHeader is-fixed">
       <a class="logo logo__mainHeader" href="/">
         <img src="/img/frisa-logo.jpg" alt="Frisa logo">
       </a>
-      
+
       <a class="logo logo__mainHeader2" href="/">
         <img src="/img/frisa-logo-2.png" alt="Frisa logo">
-      </a>  
-      
+      </a>
+
       <nav class="mainNav">
         <ul class="mainNav-menu">
           <li class="mainNav-menuItem">
@@ -34,7 +34,7 @@
               <li><a href="/products/pot-die-forgings.html">Pot Die Forgings</a></li>
             </ul>
           </li>
-          
+
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/industries/">Industries</a>
             <ul class="mainNav-dropdown">
@@ -60,8 +60,8 @@
               <li><a href="/services/product-development.html">Product Development</a></li>
               <li><a href="/services/logistics.html">Logistics</a></li>
             </ul>
-          </li>        
-          
+          </li>
+
           <li class="mainNav-menuItem">
             <a class="mainNav-link" href="/quality.html">Quality</a>
           </li>
@@ -98,7 +98,7 @@
         <img src="/img/mobileNav-trigger.png" alt="">
       </button>
     </header>
-    
+
     <header class="sectionHeader sectionHeader-contact">
       <h2 class="sectionHeader-title">Contact Us</h2>
       <h1 class="sectionHeader-subtitle">How can we help you?</h1>
@@ -119,7 +119,7 @@
         <p class="text">Fields marked with an asterisk (*) are required.</p>
 
         <div class="formContainer">
-          <form class="form">
+          <form class="form" action="request-quote-send-mail.php" method="post" enctype="multipart/form-data">
             <input class="formInput" name="name" type="text" placeholder="Name*" required>
             <input class="formInput" name="company" type="text" placeholder="Company*" required>
             <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
@@ -131,14 +131,14 @@
             <input class="formInput" name="industry" type="text" placeholder="Industry" required>
             <select class="inputSelect" name="product" id="">
               <option value="">Product</option>
-              <option value="">Rolled Rings</option>
-              <option value="">Contour Rings</option>
-              <option value="">Bars</option>
-              <option value="">Shafts</option>
-              <option value="">Blocks</option>
-              <option value="">Discs</option>
-              <option value="">Pot Die Forgings</option>
-            </select>    
+              <option value="Rolled Rings">Rolled Rings</option>
+              <option value="Contour Rings">Contour Rings</option>
+              <option value="Bars">Bars</option>
+              <option value="Shafts">Shafts</option>
+              <option value="Blocks">Blocks</option>
+              <option value="Discs">Discs</option>
+              <option value="Pot Die Forgings">Pot Die Forgings</option>
+            </select>
             <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs"></textarea>
             <input id="inputFile" class="inputFile" name="file" type="text" placeholder="Add File">
             <input id="inputFile__hidden" class="inputFile__hidden" type="file" name="file">
@@ -180,7 +180,7 @@
     </section>
 
     <footer>
-      <div class="container">      
+      <div class="container">
         <a href="/" class="logo logo__footer">
           <img src="/img/frisa-logo-2.png" alt="">
         </a>
