@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 
 if (empty($_POST['send'])) {
   header('Location: request-quote.html');
@@ -17,9 +18,9 @@ $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
 $mail->Port = $mail_port;
-$mail->setFrom('contact-form@friesa.com', 'Contact Form');
+$mail->setFrom('frisa@frisa.com', 'Request Quote Form');
 
-$mail->addAddress('request-quote@friesa.com');
+$mail->addAddress('frisa@frisa.com');
 
 $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 
@@ -42,9 +43,9 @@ $mail->AltBody = "Nombre: $name\nCompañia: $company\nCorreo: $email\n" .
   "Producto: $product\nComentarios: $comments";
 
 if(!$mail->send()) {
-  header('Location: request-quote.html?error=' . $mail->ErrorInfo );
+  header('Location: error.php?back=request-quote' . $mail->ErrorInfo );
 } else {
-  header('Location: request-quote.html?msg=sent' );
+  header('Location: success.php?back=request-quote' );
 }
 
 ?>

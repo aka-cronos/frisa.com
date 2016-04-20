@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 
 if (empty($_POST['send'])) {
   header('Location: suppliers-relations.html');
@@ -17,9 +18,9 @@ $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
 $mail->Port = $mail_port;
-$mail->setFrom('contact-form@friesa.com', 'Contact Form');
+$mail->setFrom('supply@frisa.com', 'Suppliers Relations Form');
 
-$mail->addAddress('suppliers-relations@friesa.com');
+$mail->addAddress('supply@frisa.com');
 
 $name = $_POST["name"];
 $email = $_POST["mail"];
@@ -31,9 +32,9 @@ $mail->Body = "Nombre: $name<br />Correo: $email<br />Servicio: $service<br />Co
 $mail->AltBody = "Nombre: $name\nCorreo: $email\nServicio: $service\nComentarios: $comments";
 
 if(!$mail->send()) {
-  header('Location: suppliers-relations.html?error=' . $mail->ErrorInfo );
+  header('Location: error.php?back=suppliers-relations' . $mail->ErrorInfo );
 } else {
-  header('Location: suppliers-relations.html?msg=sent' );
+  header('Location: success.php?back=suppliers-relations' );
 }
 
 ?>

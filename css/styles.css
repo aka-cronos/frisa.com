@@ -254,6 +254,11 @@ th {
 .sectionHeader-subtitle__red {
   color: #ce181e;
 }
+.title__big,
+.sectionHeader-title__big,
+.sectionHeader-subtitle__big {
+  font-size: 3rem;
+}
 .title__small,
 .sectionHeader-title__small,
 .sectionHeader-subtitle__small {
@@ -2316,6 +2321,13 @@ footer p {
     padding-right: calc(50% - (90% / 2));
     padding-top: 5rem;
   }
+}
+.form-confirmation {
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
 }
 .homeAbout:after {
   content: '';

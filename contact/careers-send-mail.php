@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 
 if (empty($_POST['send'])) {
   header('Location: careers.html');
@@ -17,9 +18,9 @@ $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
 $mail->Port = $mail_port;
-$mail->setFrom('contact-form@friesa.com', 'Contact Form');
+$mail->setFrom('rh@frisa.com', 'Careers Form');
 
-$mail->addAddress('careers@friesa.com');
+$mail->addAddress('rh@frisa.com');
 
 $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 
@@ -34,9 +35,9 @@ $mail->Body = "Nombre: $name<br />Correo: $email<br />Telefono: $phone<br />Area
 $mail->AltBody = "Nombre: $name\nCorreo: $email\nTelefono: $phone\nArea: $area\nComentarios: $comments";
 
 if(!$mail->send()) {
-  header('Location: careers.html?error=' . $mail->ErrorInfo );
+  header('Location: error.php?back=careers' . $mail->ErrorInfo );
 } else {
-  header('Location: careers.html?msg=sent' );
+  header('Location: success.php?back=careers' );
 }
 
 ?>

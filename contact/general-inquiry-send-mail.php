@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 
 if (empty($_POST['send'])) {
   header('Location: general-inquiry.html');
@@ -17,9 +18,9 @@ $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
 $mail->Port = $mail_port;
-$mail->setFrom('contact-form@friesa.com', 'Contact Form');
+$mail->setFrom('mkt@frisa.com', 'General Inquiry Form');
 
-$mail->addAddress('general-inquiry@friesa.com');
+$mail->addAddress('mkt@frisa.com');
 
 $name = $_POST["name"];
 $email = $_POST["mail"];
@@ -31,9 +32,9 @@ $mail->Body = "Nombre: $name<br />Correo: $email<br />Servicio: $service<br />Co
 $mail->AltBody = "Nombre: $name\nCorreo: $email\nServicio: $service\nComentarios: $comments";
 
 if(!$mail->send()) {
-  header('Location: general-inquiry.html?error=' . $mail->ErrorInfo );
+  header('Location: error.php?back=general-inquiry' . $mail->ErrorInfo );
 } else {
-  header('Location: general-inquiry.html?msg=sent' );
+  header('Location: success.php?back=general-inquiry' );
 }
 
 ?>
