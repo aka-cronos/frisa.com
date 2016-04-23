@@ -328,6 +328,9 @@ body {
   margin-bottom: 0.5rem;
   color: #7c7c7c;
 }
+.basicLink {
+  color: #ce181e;
+}
 .sectionContent {
   padding-left: calc(50% - (1140px / 2));
   padding-right: calc(50% - (1140px / 2));
@@ -2321,6 +2324,13 @@ footer p {
     padding-right: calc(50% - (90% / 2));
     padding-top: 5rem;
   }
+}
+.form-confirmation {
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
 }
 .form-confirmation {
   padding-left: calc(50% - (1140px / 2));
