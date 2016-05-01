@@ -7,6 +7,45 @@
     <meta name="description" content="New Frisa Corporate website">
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script>
+    function validateForm() {
+      var form = document.forms[0];
+
+      if (!(/^[a-zA-Z ]+$/.test(form["name"]))) {
+        return false;
+      }
+      var email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+      if (!(email.test(form["mail"]))) {
+        return false;
+      }
+      if (!form["company"]) {
+        return false;
+      }
+      if (!form["phone"]) {
+        return false;
+      }
+      if (!form["company"]) {
+        return false;
+      }
+      if (!form["country"]) {
+        return false;
+      }
+      if (!form["state"]) {
+        return false;
+      }
+      if (!form["product"]) {
+        return false;
+      }
+      if (!form["industry"]) {
+        return false;
+      }
+      if (!form["message"]) {
+        return false;
+      }
+
+      return true;
+    }
+    </script>
   </head>
 
   <body>
@@ -119,17 +158,18 @@
         <p class="text">Fields marked with an asterisk (*) are required.</p>
 
         <div class="formContainer">
-          <form class="form" action="request-quote-send-mail.php" method="post" enctype="multipart/form-data">
+          <form class="form" action="request-quote-send-mail.php" method="post"
+            enctype="multipart/form-data" onsubmit="return validateForm();">
             <input class="formInput" name="name" type="text" placeholder="Name*" required>
             <input class="formInput" name="company" type="text" placeholder="Company*" required>
             <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
             <input class="formInput" name="phone" type="text" placeholder="Phone" required>
-            <select class="inputSelect" id="country" name="country"></select>
-            <select class="inputSelect" name="state" id="state">
+            <select class="inputSelect" id="country" name="country" required></select>
+            <select class="inputSelect" name="state" id="state" required>
               <option value="">Select State</option>
             </select>
             <input class="formInput" name="industry" type="text" placeholder="Industry" required>
-            <select class="inputSelect" name="product" id="">
+            <select class="inputSelect" name="product" id="" required>
               <option value="">Product</option>
               <option value="Rolled Rings">Rolled Rings</option>
               <option value="Contour Rings">Contour Rings</option>
@@ -139,7 +179,7 @@
               <option value="Discs">Discs</option>
               <option value="Pot Die Forgings">Pot Die Forgings</option>
             </select>
-            <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs"></textarea>
+            <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs" required></textarea>
             <input id="inputFile" class="inputFile" name="file" type="text" placeholder="Add File">
             <input id="inputFile__hidden" class="inputFile__hidden" type="file" name="file">
             <input class="btn-submit" type="submit" name="send" value="Submit">

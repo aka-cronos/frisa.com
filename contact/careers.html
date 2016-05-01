@@ -7,6 +7,27 @@
     <meta name="description" content="New Frisa Corporate website">
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script>
+    function validateForm() {
+      var form = document.forms[0];
+
+      if (!(/^[a-zA-Z ]+$/.test(form["name"]))) {
+        return false;
+      }
+      var email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+      if (!(email.test(form["mail"]))) {
+        return false;
+      }
+      if (!form["area"]) {
+        return false;
+      }
+      if (!form["message"]) {
+        return false;
+      }
+
+      return true;
+    }
+    </script>
   </head>
 
   <body>
@@ -129,14 +150,14 @@
       </div>
 
       <div class="formContainer">
-        <form class="form" action="careers-send-mail.php" method="post" enctype="multipart/form-data">
+        <form class="form" action="careers-send-mail.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
           <input class="formInput" name="name" type="text" placeholder="Name*" required>
           <input class="formInput" name="mail" type="mail" placeholder="eMail*" required>
-          <input class="formInput" name="phone" type="text" placeholder="Phone" required>
+          <input class="formInput" name="phone" type="text" placeholder="Phone">
           <input class="formInput" name="area" type="text" placeholder="Area of interest" required>
           <input id="inputFile" class="inputFile" name="file" type="text" placeholder="Upload your resume in PDF format">
           <input id="inputFile__hidden" class="inputFile__hidden" type="file" name="file">
-          <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs"></textarea>
+          <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs" required></textarea>
           <input class="btn-submit" type="submit" name="send" value="Submit">
         </form>
       </div>

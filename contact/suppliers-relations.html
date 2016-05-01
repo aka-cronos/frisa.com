@@ -7,6 +7,27 @@
     <meta name="description" content="New Frisa Corporate website">
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script>
+    function validateForm() {
+      var form = document.forms[0];
+
+      if (!(/^[a-zA-Z ]+$/.test(form["name"]))) {
+        return false;
+      }
+      var email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+      if (!(email.test(form["mail"]))) {
+        return false;
+      }
+      if (!form["service"]) {
+        return false;
+      }
+      if (!form["message"]) {
+        return false;
+      }
+
+      return true;
+    }
+    </script>
   </head>
 
   <body>
@@ -121,17 +142,17 @@
         <p class="text">Fields marked with an asterisk (*) are required.</p>
 
         <div class="formContainer">
-          <form class="form" action="suppliers-relations-send-mail.php" method="post">
+          <form class="form" action="suppliers-relations-send-mail.php" method="post" onsubmit="return validateForm();">
             <input class="formInput" name="name" type="text" placeholder="Name*" required>
             <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
-            <select class="inputSelect" name="service" id="">
+            <select class="inputSelect" name="service" id="" required>
               <option value="">About*</option>
               <option value="Logistics and Transportation">Logistics and Transportation</option>
               <option value="Raw Material">Raw Material</option>
               <option value="Indirect Material">Indirect Material</option>
               <option value="Professional Services">Professional Services</option>
             </select>
-            <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments"></textarea>
+            <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments" required></textarea>
             <input class="btn-submit" type="submit" name="send" value="Submit">
           </form>
         </div>
