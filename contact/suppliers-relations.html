@@ -10,22 +10,31 @@
     <script>
     function validateForm() {
       var form = document.forms[0];
+      var validates = true;
 
-      if (!(/^[a-zA-Z ]+$/.test(form["name"]))) {
-        return false;
+      if (!(/^[a-zA-Z ]+$/.test(form["name"].value))) {
+        form["name"].className = 'required';
+        document.getElementById("name-errors").textContent = 'Can only contain letters';
+        validates = false;
       }
       var email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
-      if (!(email.test(form["mail"]))) {
-        return false;
+      if (!(email.test(form["mail"].value))) {
+        form["mail"].className = 'required';
+        document.getElementById("mail-errors").textContent = 'Must be a valid email';
+        validates = false;
       }
-      if (!form["service"]) {
-        return false;
+      if (!form["service"].value) {
+        form["service"].className = 'required';
+        document.getElementById("service-errors").textContent = 'Can not be blank';
+        validates = false;
       }
-      if (!form["message"]) {
-        return false;
+      if (!form["message"].value) {
+        form["message"].className = 'required';
+        document.getElementById("message-errors").textContent = 'Can not be blank';
+        validates = false;
       }
 
-      return true;
+      return validates;
     }
     </script>
   </head>
@@ -143,8 +152,11 @@
 
         <div class="formContainer">
           <form class="form" action="suppliers-relations-send-mail.php" method="post" onsubmit="return validateForm();">
+            <span id="name-errors"></span>
             <input class="formInput" name="name" type="text" placeholder="Name*" required>
+            <span id="mail-errors"></span>
             <input class="formInput" name="mail" type="mail" placeholder="eMail" required>
+            <span id="service-errors"></span>
             <select class="inputSelect" name="service" id="" required>
               <option value="">About*</option>
               <option value="Logistics and Transportation">Logistics and Transportation</option>
@@ -152,6 +164,7 @@
               <option value="Indirect Material">Indirect Material</option>
               <option value="Professional Services">Professional Services</option>
             </select>
+            <span id="message-errors"></span>
             <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments" required></textarea>
             <input class="btn-submit" type="submit" name="send" value="Submit">
           </form>
