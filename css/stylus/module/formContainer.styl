@@ -1,28 +1,34 @@
-.formContainer
+.formInput
+.inputFile
+.inputSelect
+  font-size 1.25rem
+  display block
+  padding 1rem
+  width 100%
+  border 1px solid $frisa__light-grey
+  margin-bottom 1.25rem
+  border-radius .5rem
+  appearance none
+  background transparent
+  color $frisa__grey
   
-  .formInput
-  .inputFile
-  .inputSelect
-    font-size 1.25rem
-    display block
-    padding 1rem
-    width 100%
-    border 1px solid $frisa__light-grey
-    margin-bottom 1.25rem
-    border-radius .5rem
-    appearance none
-    background transparent
+  &::placeholder
     color $frisa__grey
     
-    &::placeholder
-      color $frisa__grey
-  
-  .inputSelect
-    background url('/img/select-arrow.png') right 1rem center no-repeat
-    
-  .inputFile
-    cursor pointer
+  &.has-error
+    border 1px solid $frisa__red
 
-  .inputFile__hidden
-    display none
-    cursor pointer
+.inputSelect
+  background url('/img/select-arrow.png') right 1rem center no-repeat
+  
+.inputFile
+  cursor pointer
+
+.inputFile__hidden
+  display none
+  cursor pointer
+  
+.error-validation
+  font-weight bold
+  font-size .825rem
+  color $frisa__red

@@ -2092,9 +2092,9 @@ footer p {
   background: url("/img/slide_blocks.jpg") center no-repeat;
   background-size: cover;
 }
-.formContainer .formInput,
-.formContainer .inputFile,
-.formContainer .inputSelect {
+.formInput,
+.inputFile,
+.inputSelect {
   font-size: 1.25rem;
   display: block;
   padding: 1rem;
@@ -2108,35 +2108,45 @@ footer p {
   background: transparent;
   color: #7c7c7c;
 }
-.formContainer .formInput::-webkit-input-placeholder,
-.formContainer .inputFile::-webkit-input-placeholder,
-.formContainer .inputSelect::-webkit-input-placeholder {
+.formInput::-webkit-input-placeholder,
+.inputFile::-webkit-input-placeholder,
+.inputSelect::-webkit-input-placeholder {
   color: #7c7c7c;
 }
-.formContainer .formInput::-moz-placeholder,
-.formContainer .inputFile::-moz-placeholder,
-.formContainer .inputSelect::-moz-placeholder {
+.formInput::-moz-placeholder,
+.inputFile::-moz-placeholder,
+.inputSelect::-moz-placeholder {
   color: #7c7c7c;
 }
-.formContainer .formInput:-ms-input-placeholder,
-.formContainer .inputFile:-ms-input-placeholder,
-.formContainer .inputSelect:-ms-input-placeholder {
+.formInput:-ms-input-placeholder,
+.inputFile:-ms-input-placeholder,
+.inputSelect:-ms-input-placeholder {
   color: #7c7c7c;
 }
-.formContainer .formInput::placeholder,
-.formContainer .inputFile::placeholder,
-.formContainer .inputSelect::placeholder {
+.formInput::placeholder,
+.inputFile::placeholder,
+.inputSelect::placeholder {
   color: #7c7c7c;
 }
-.formContainer .inputSelect {
+.formInput.has-error,
+.inputFile.has-error,
+.inputSelect.has-error {
+  border: 1px solid #ce181e;
+}
+.inputSelect {
   background: url("/img/select-arrow.png") right 1rem center no-repeat;
 }
-.formContainer .inputFile {
+.inputFile {
   cursor: pointer;
 }
-.formContainer .inputFile__hidden {
+.inputFile__hidden {
   display: none;
   cursor: pointer;
+}
+.error-validation {
+  font-weight: bold;
+  font-size: 0.825rem;
+  color: #ce181e;
 }
 .aerospace-engine {
   position: relative;

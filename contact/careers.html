@@ -7,36 +7,6 @@
     <meta name="description" content="New Frisa Corporate website">
     <title>Frisa Contact - General Inquiry</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <script>
-    function validateForm() {
-      var form = document.forms[0];
-      var validates = true;
-
-      if (!(/^[a-zA-Z ]+$/.test(form["name"].value))) {
-        form["name"].className = 'required';
-        document.getElementById("name-errors").textContent = 'Can only contain letters';
-        validates = false;
-      }
-      var email = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
-      if (!(email.test(form["mail"].value))) {
-        form["mail"].className = 'required';
-        document.getElementById("mail-errors").textContent = 'Must be a valid email';
-        validates = false;
-      }
-      if (!form["area"].value) {
-        form["area"].className = 'required';
-        document.getElementById("service-errors").textContent = 'Can not be blank';
-        validates = false;
-      }
-      if (!form["message"].value) {
-        form["message"].className = 'required';
-        document.getElementById("message-errors").textContent = 'Can not be blank';
-        validates = false;
-      }
-
-      return validates;
-    }
-    </script>
   </head>
 
   <body>
@@ -160,17 +130,12 @@
 
       <div class="formContainer">
         <form class="form" action="careers-send-mail.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
-          <span id="name-errors"></span>
           <input class="formInput" name="name" type="text" placeholder="Name*" required>
-          <span id="mail-errors"></span>
           <input class="formInput" name="mail" type="mail" placeholder="eMail*" required>
-          <span id="phone-errors"></span>
           <input class="formInput" name="phone" type="text" placeholder="Phone">
-          <span id="area-errors"></span>
           <input class="formInput" name="area" type="text" placeholder="Area of interest" required>
           <input id="inputFile" class="inputFile" name="file" type="text" placeholder="Upload your resume in PDF format">
           <input id="inputFile__hidden" class="inputFile__hidden" type="file" name="file">
-          <span id="message-errors"></span>
           <textarea class="formInput" name="message" cols="30" rows="5" placeholder="Comments / Needs" required></textarea>
           <input class="btn-submit" type="submit" name="send" value="Submit">
         </form>
@@ -287,6 +252,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/scripts/unslider.min.js"></script>
+    <script src="/scripts/form-validations.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
 </html>
