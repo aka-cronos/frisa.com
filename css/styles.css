@@ -1279,9 +1279,19 @@ footer p {
   background: url("/img/about/header-social-responsability.jpg") center no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 800px) {
+  .sectionHeader-social-responsability {
+    background-position: 80% center;
+  }
+}
 .sectionHeader-contact {
   background: url("/img/contact/header-contact.jpg") center no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+  .sectionHeader-contact {
+    background-position: 10% center;
+  }
 }
 .sectionHeader-materials {
   background: url("/img/header-materials.jpg") center no-repeat;
@@ -2090,6 +2100,10 @@ footer p {
 }
 .slide_blocks {
   background: url("/img/slide_blocks.jpg") center no-repeat;
+  background-size: cover;
+}
+.slide_frisa-steel {
+  background: url("/img/slide_frisa-steel.jpg") center no-repeat;
   background-size: cover;
 }
 .formInput,
