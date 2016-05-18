@@ -13,7 +13,7 @@ $mail = new PHPMailer;
 
 $mail->isSMTP();
 $mail->Host = "$mail_host";
-$mail->SMTPAuth = true;
+$mail->SMTPAuth = false;
 $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
@@ -21,6 +21,7 @@ $mail->Port = $mail_port;
 $mail->setFrom('frisa@frisa.com', 'Request Quote Form');
 
 $mail->addAddress('frisa@frisa.com');
+$mail->addAddress('mkt@frisa.com');
 
 $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
 

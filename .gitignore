@@ -3,3 +3,4 @@ config.codekit
 /node_modules
 /ws
 /_db
+/mailer/config.php

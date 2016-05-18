@@ -1,7 +1,8 @@
 function onError(form, e, msg) {
-  e.className += ' has-error';
   var error = document.createElement('span');
-  error.setAttribute('class', 'error-validation');
+
+  e.className += ' has-error';
+  error.setAttribute('class', 'error-validation')
   error.appendChild(document.createTextNode(msg));
   form.insertBefore(error, e);
 }

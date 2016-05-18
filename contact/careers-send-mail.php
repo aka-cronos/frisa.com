@@ -13,7 +13,7 @@ $mail = new PHPMailer;
 
 $mail->isSMTP();
 $mail->Host = "$mail_host";
-$mail->SMTPAuth = true;
+$mail->SMTPAuth = false;
 $mail->Username = "$mail_username";
 $mail->Password = "$mail_password";
 $mail->SMTPSecure = "$mail_security";
