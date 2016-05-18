@@ -2579,6 +2579,11 @@ footer p {
   background: url("/img/home-careers.jpg") center no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 800px) {
+  .home-actions__item--careers {
+    background-position: left center;
+  }
+}
 .home-actions h4 {
   margin-bottom: 1rem;
   font-size: 2rem;
