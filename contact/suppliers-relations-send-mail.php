@@ -6,8 +6,8 @@ if (empty($_POST['send'])) {
   exit;
 }
 
-require '../mailer/config.php';
-require '../mailer/PHPMailerAutoload.php';
+require './mailer/config.php';
+require './mailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
