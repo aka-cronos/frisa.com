@@ -1,0 +1,26 @@
+.subNav-secondary
+  wrapped()
+  background-color $frisa__soft-grey
+  display flex
+  text-align center
+  
+  +below(900px)
+    flex-direction column
+  
+  &-item
+    padding-top 1rem
+    padding-bottom 1rem
+    color $frisa__grey
+    text-decoration none
+    
+    &:last-child
+      margin-right 0
+
+    &:hover
+    &.active
+      color $frisa__dark-grey
+      border-bottom 4px solid $frisa__dark-grey
+      
+    +above(600px)
+      padding-right 1rem
+      padding-left 1rem

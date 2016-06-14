@@ -1,0 +1,65 @@
+.products-subNav
+  wrapped()
+  display flex
+  justify-content center
+  position fixed
+  top 102px
+  right 0
+  left 0
+  z-index 5
+  background-color white
+  text-align center
+  
+  &.is-scrolled
+    top 69px
+  
+  &.is-open .products-subNav-item
+    display block
+    
+  &.is-open .subMenu-trigger:after
+    transform rotate(180deg)
+
+  +below($desktop)
+    top 69px
+  
+  +below($desktop)
+    flex-direction column
+  
+  &-item
+    font-size .8125rem
+    padding-top 1rem
+    padding-bottom 1rem
+    color $frisa__grey
+    text-decoration none
+    
+    +below($desktop)
+      display none
+
+    &:hover
+    &.active
+      display block
+      color $frisa__dark-grey
+      
+    +above($mobile)
+      margin-right 2rem
+      margin-left 2rem
+
+.subMenu-trigger
+  position relative
+  padding-top 1rem
+  padding-bottom 1rem
+  color $frisa__dark-grey
+  cursor pointer
+  background-color $frisa__light-grey
+  
+  &:after
+    position absolute
+    top 14px
+    right 2rem
+    width 20px
+    height 20px
+    content url(/img/arrow-down__red.png)
+
+  +above($desktop)
+    display none
+  

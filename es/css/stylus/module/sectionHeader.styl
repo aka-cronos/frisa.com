@@ -1,0 +1,118 @@
+.sectionHeader
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  padding-top 90px
+  min-height 400px
+  height 40vh
+  text-align center
+  
+  +below(800px)
+    wrapped(90%)
+  
+  &-title
+  &-subtitle
+    @extend $title
+    max-width 700px
+    color white
+    
+  &-title
+    margin-top 0
+    margin-bottom 1rem
+    font-weight bold
+    
+  &-subtitle
+    margin 0
+    
+  // Industries headers
+  &-industries
+    background url('/img/industries/header-industries.jpg') center no-repeat
+    background-size cover
+
+  &-aerospace
+    background url('/img/industries/header-aerospace.jpg') center no-repeat
+    background-size cover
+    
+  &-construction-and-mining
+    background url('/img/industries/header-construction-and-mining.jpg') center no-repeat
+    background-size cover
+
+  &-industrial-machinery
+    background url('/img/industries/header-industrial-machinery.jpg') center no-repeat
+    background-size cover
+
+  &-oil-and-gas
+    background url('/img/industries/header-oil-and-gas.jpg') center no-repeat
+    background-size cover
+
+  &-power-generation
+    background url('/img/industries/header-power-generation.jpg') center no-repeat
+    background-size cover
+    
+  &-wind-power
+    background url('/img/industries/header-wind-power.jpg') center no-repeat
+    background-size cover
+
+  &-products
+    background url('/img/products/header-products.jpg') center no-repeat
+    background-size cover
+  
+  // Services headers
+  &-heat-treatment
+    background url('/img/services/header-heat-treatment.jpg') center no-repeat
+    background-size cover
+
+  &-machining
+    background url('/img/services/header-machining.jpg') center no-repeat
+    background-size cover
+
+  &-testing
+    background url('/img/services/header-testing.jpg') center no-repeat
+    background-size cover
+
+  &-product-development
+    background url('/img/services/header-product-development.jpg') center no-repeat
+    background-size cover
+
+  &-logistics
+    background url('/img/services/header-logistics.jpg') center no-repeat
+    background-size cover
+  
+  // Quality headers
+  &-quality
+    background url('/img/header-quality.jpg') center no-repeat
+    background-size cover
+  
+  // About headers
+  &-about
+    background url('/img/about/header-about.jpg') center no-repeat
+    background-size cover
+
+  &-overview
+    background url('/img/about/header-overview.jpg') center no-repeat
+    background-size cover
+
+  &-social-responsability
+    background url('/img/about/header-social-responsability.jpg') center no-repeat
+    background-size cover
+    
+    +below(800px)
+      background-position 80% center
+          
+  &-contact
+    background url('/img/contact/header-contact.jpg') center no-repeat
+    background-size cover
+    
+    +below(800px)
+      background-position 10% center
+    
+  // Materials header
+  &-materials
+    background url('/img/header-materials.jpg') center no-repeat
+    background-size cover
+
+  // Downloads header
+  &-downloads
+    background url('/img/downloads/header-downloads.jpg') center no-repeat
+    background-size cover

@@ -1,0 +1,60 @@
+.mobileNav
+  position fixed
+  top 0
+  left 100%
+  padding-top 69px
+  width 100vw
+  height 100vh
+  font-size 1.25rem
+  z-index 9
+  background-color white
+  transition 350ms all ease-in-out
+  
+  &.is-active
+    transform translateX(-100%)
+    
+  &-menu
+    margin 0
+    padding 0
+    list-style none
+  
+  &-link
+  &-backLink
+    display block
+    padding 1rem
+    border-bottom 1px solid $frisa__grey
+    color $frisa__grey
+    text-decoration none
+  
+  &-backLink
+    color white
+    background-color $frisa__dark-grey
+
+  &-dropdown
+    position fixed
+    top 0
+    left 100%
+    margin 0
+    padding 69px 0 0 0
+    width 100vw
+    height 100vh
+    background-color white
+    list-style none
+    transition 350ms all ease-in-out
+    
+    &.is-active
+      transform translateX(-100%)
+
+.mobileNav-trigger
+  padding 0
+  border 0
+  background transparent
+  color white
+  font-size 2.5rem
+  line-height 1
+  
+  +above($desktop)
+    display none
+
+
+

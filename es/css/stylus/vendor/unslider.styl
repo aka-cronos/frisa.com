@@ -1,0 +1,59 @@
+.unslider
+  position relative
+  margin 0
+  padding 0
+
+.unslider-wrap
+  position relative
+  overflow auto
+
+.unslider-wrap.unslider-carousel>li
+  float left
+  
+  & img
+    display block
+    width 100%
+
+.unslider li
+.unslider ol
+.unslider ul
+  margin 0
+  padding 0
+  border 0
+  list-style none
+
+.unslider-arrow
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  display block
+  width 34px
+  height 34px
+  text-decoration none
+  cursor pointer
+  
+  & img
+    display block
+
+.unslider-arrow.prev
+  left 30px
+
+.unslider-arrow.next
+  right 30px
+
+
+// slides dots
+.unslider-nav ol
+  list-style none
+  text-align center
+
+.unslider-nav ol li
+  display inline-block
+  margin 0 1rem
+  padding 1rem .5rem
+  color white
+  cursor pointer
+
+.unslider-nav ol li.unslider-active
+  border-bottom 4px solid white
+  cursor default

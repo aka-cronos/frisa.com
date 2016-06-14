@@ -1,0 +1,127 @@
+.btn
+$btn
+  display inline-block
+  border-radius 4px
+  text-align center
+  text-decoration none
+  line-height 1
+  transition 300ms all ease-in-out
+
+.btn__small
+$btn__small
+  min-width 100px
+  font-size .75em
+  padding .5em
+  font-weight 600
+
+.btn__small-with
+$btn__small-with
+  font-size .75em
+  padding .5em
+  font-weight 600
+  
+.btn__large
+$btn__large
+  padding .75rem 2rem
+  
+.btn__white
+$btn__white
+  color $frisa__dark-red
+  background-color white
+  &:hover
+    color white
+    background-color $frisa__dark-red
+      
+.btn__red
+$btn__red
+  color white
+  background-color $frisa__dark-red
+  &:hover
+    color $frisa__dark-red
+    background-color white
+    
+.btn__red-onWhite
+$btn__red-onWhite
+  color white
+  background-color $frisa__dark-red
+  &:hover
+    background-color $frisa__red
+
+.btn__grey
+$btn__grey
+  color white
+  background-color $frisa__dark-grey
+  &:hover
+    color $frisa__dark-grey
+    background-color white
+    
+.btn__blue
+$btn__blue
+  color white
+  background-color $frisa__blue
+  &:hover
+    background-color darken($frisa__blue, 30%)
+
+.btn-lang
+  @extend $btn
+  @extend $btn__small-with
+  @extend $btn__red
+  margin-left 1.5rem
+  
+.btn-sliderQuote
+  @extend $btn
+  @extend $btn__small
+  @extend $btn__red
+  
+.btn-sliderDownload
+  @extend $btn
+  @extend $btn__small
+  @extend $btn__grey
+
+.btn-quote
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__red-onWhite
+  margin-top 1rem
+  
+.btn-download
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__blue
+  margin-bottom 2rem
+  
+.btn-materials
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__red-onWhite
+
+  +above(800px)
+    margin-left 6rem
+    
+.btn-submit
+  @extend $btn
+  @extend $btn__large
+  @extend $btn__red-onWhite
+  border 0
+  border-radius 5px
+  
+.btn-aerospace
+  position absolute
+  z-index 5
+  width 40px
+  height 40px
+  border-radius 50%
+  background-color rgba($frisa__light-grey, .8)
+  border 0
+  color $frisa__grey
+  font-weight bold
+  transition 350ms all ease-in-out
+  
+  &:hover
+    background-color $frisa__red
+    color white
+    
+  +below($mobile)
+    width 30px
+    height 30px
+    

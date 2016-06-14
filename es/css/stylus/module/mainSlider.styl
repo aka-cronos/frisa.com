@@ -1,0 +1,85 @@
+.mainSlider
+  height 100vh
+  background-color tomato
+
+  & .unslider
+  & .fullSlider
+  & ul
+  & ul li
+    height 100%
+    
+  & ul li
+    display flex
+    align-items center
+    justify-content center
+    padding-top 99px
+    
+  & .unslider-arrow
+      top calc(50% + 50px)
+      transform translateY(-50%)
+      
+      +below(600px)
+        top 90%
+
+.slideContent
+  color white
+  text-align center
+  
+.slideTitle
+  font-size responsive 3rem 4.75rem
+  font-weight bold
+  text-transform uppercase
+  margin-top 0
+  margin-bottom 0
+  
+.slideSubtitle
+  margin-top 0
+  margin-right auto
+  margin-left auto
+  max-width 600px
+  font-weight 400
+  font-size responsive 1.5rem 2rem
+  
+.slideContent-actions
+  margin-bottom 2rem
+  
+.unslider-nav
+  position absolute
+  bottom 0
+  width 100%
+  background-color rgba(black, .5)
+  
+  +below($tablet)
+    display none
+
+.slide_frisaExpress
+  background url('/img/slide_frisa-express.jpg') center no-repeat
+  background-size cover
+  
+.slide_contoured-rings
+  background url('/img/slide_contoured-rings.jpg') center no-repeat
+  background-size cover
+  
+.slide_hollows
+  background url('/img/slide_hollows.jpg') center no-repeat
+  background-size cover
+  
+.slide_discs
+  background url('/img/slide_discs.jpg') center no-repeat
+  background-size cover
+
+.slide_bars
+  background url('/img/slide_bars.jpg') center no-repeat
+  background-size cover
+
+.slide_shafts
+  background url('/img/slide_shafts.jpg') center no-repeat
+  background-size cover
+
+.slide_blocks
+  background url('/img/slide_blocks.jpg') center no-repeat
+  background-size cover
+  
+.slide_frisa-steel
+  background url('/img/slide_frisa-steel.jpg') center no-repeat
+  background-size cover

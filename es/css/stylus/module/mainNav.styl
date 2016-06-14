@@ -1,0 +1,71 @@
+.mainNav
+  display flex
+  align-items center
+  
+  +below($desktop)
+    display none
+
+  &-menu
+    float left
+    margin 0
+    padding 0
+    list-style none
+  
+    &Item
+      position relative
+      display inline-block
+      
+      &:hover .mainNav-dropdown
+        display block
+
+  &-actions
+    display flex
+    align-items center
+    float right
+    margin-left 2rem
+
+  &-link
+    position relative
+    display block
+    padding 40px 1.5rem
+    color white
+    text-decoration none
+    &:after
+      position absolute
+      bottom 0
+      left 0
+      display block
+      width 100%
+      height 0
+      background-color white
+      content ''
+      transition 350ms all ease
+    &.active:after
+    &:hover:after
+      height 4px
+      content ''
+
+  &-dropdown
+    position absolute
+    top 100%
+    left 0
+    display none
+    padding 0
+    min-width 220px
+    background-color rgba(white, .9)
+    list-style none
+
+    li
+      padding .5em 1.5em
+      border-bottom 1px solid lighten($frisa__grey, 50%)
+      
+      &:hover
+        background-color lighten($frisa__grey, 50%)
+      
+      &:last-child
+        border-bottom 0
+
+    a
+      color $frisa__dark-grey
+      display block
+      text-decoration none

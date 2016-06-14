@@ -1,0 +1,60 @@
+.subNav
+  wrapped()
+  background-color $frisa__grey
+  display flex
+  text-align center
+  
+  &.is-scrolled
+    top 69px
+  
+  &.is-open .subNav-item
+    display block
+    
+  &.is-open .subNav-trigger:after
+    transform rotate(180deg)
+    
+  +below($desktop)
+    top 69px
+  
+  +below($desktop)
+    flex-direction column
+  
+  &-item
+    padding-top 1rem
+    padding-bottom 1rem
+    color rgba(white, .6)
+    text-decoration none
+    
+    +below($desktop)
+      display none
+          
+    &:last-child
+      margin-right 0
+
+    &:hover
+    &.active
+      display block
+      color white
+      
+    +above($mobile)
+      padding-right 1rem
+      padding-left 1rem
+      
+.subNav-trigger
+  position relative
+  padding-top 1rem
+  padding-bottom 1rem
+  color white
+  cursor pointer
+  background-color $frisa__red
+  
+  &:after
+    position absolute
+    top 14px
+    right 2rem
+    width 20px
+    height 20px
+    content url(/img/arrow-down__white.png)
+  
+  +above($desktop)
+    display none

@@ -1,0 +1,25 @@
+.sectionContent
+  wrapped()
+  display flex
+  flex-wrap wrap
+  margin-top 4rem
+  margin-bottom 4rem
+  
+  +below(1120px)
+   wrapped(90%)
+
+  & > div
+    width calc(50% - 1rem)
+    margin-bottom 1rem
+    
+    +below(900px)
+      width 100%
+
+    &:nth-child(odd)
+      margin-right 1rem
+
+      +below(900px)
+        margin-right 0
+
+  &__products
+    margin-top 14rem

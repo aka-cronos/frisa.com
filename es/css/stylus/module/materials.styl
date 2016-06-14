@@ -1,0 +1,58 @@
+.materials
+  wrapped()
+  clear fix
+  padding-bottom 6rem
+  
+  +below($desktop)
+    wrapped(90%)
+    
+  &-header
+    display flex
+    align-items flex-start
+    justify-content space-between
+    
+    .title
+      margin-top 0
+
+    .btn-download
+      margin-bottom 0
+    
+    +below($mobile)
+      flex-direction column
+
+  &-table
+    table-layout fixed
+    text-align left
+    color $frisa__grey
+    width 100%
+    
+  .title
+    margin-bottom 1rem
+    
+  thead
+    color $frisa__red
+      
+  th
+  td
+    border 1px solid $frisa__light-grey
+    padding .25rem 2rem
+    width 25%
+    
+    +below($mobile)
+      padding .25rem
+
+    &:first-child
+      border-left 0
+      
+    &:last-child
+      border-right 0
+
+  th
+    font-weight 600
+    +below($mobile)
+      font-size .825rem
+            
+  td
+    font-size .825rem
+    +below($mobile)
+      font-size .7rem

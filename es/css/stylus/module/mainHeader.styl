@@ -1,0 +1,28 @@
+.mainHeader
+  wrapped()
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+  background-color rgba($frisa__red, .9)
+  border-top 3px solid $frisa__grey
+  z-index 10
+  
+  +below($desktop)
+    wrapped(90%)
+    height 69px
+
+  &.is-fixed
+    position fixed
+    top 0
+    
+  &.is-scrolled
+    .logo__mainHeader
+      display none
+      
+    .logo__mainHeader2
+      display block
+      
+    .mainNav-link
+      padding-top 25px
+      padding-bottom 25px
