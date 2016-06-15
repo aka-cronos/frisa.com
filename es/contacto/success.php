@@ -183,7 +183,7 @@
             <li><a class="mobileNav-link" href="/es/productos/bars.html">Barras</a></li>
             <li><a class="mobileNav-link" href="/es/productos/hollows.html">Barras Huecas</a></li>
             <li><a class="mobileNav-link" href="/es/productos/shafts.html">Rodillos</a></li>
-            <li><a class="mobileNav-link" href="/es/productos/blocks.html">Bloques y soleras</a></li>
+            <li><a class="mobileNav-link" href="/es/productos/blocks.html">Bloques y Soleras</a></li>
             <li><a class="mobileNav-link" href="/es/productos/discs.html">Discos</a></li>
             <li><a class="mobileNav-link" href="/es/productos/pot-die-forgings.html">Forja semi cerrada</a></li>
           </ul>
