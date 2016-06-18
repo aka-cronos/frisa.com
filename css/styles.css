@@ -319,6 +319,9 @@ body {
   margin: 0 0 1.5rem 0;
   padding-left: 1rem;
 }
+.dotList--number {
+  padding-left: 2rem;
+}
 .dotList li {
   color: #ce181e;
 }

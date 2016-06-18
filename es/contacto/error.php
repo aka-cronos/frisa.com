@@ -7,6 +7,7 @@
     <meta name="description" content="New Frisa Corporate website">
     <title>Error form - Frisa Materials</title>
     <link rel="stylesheet" href="/es/css/styles.css">
+		<link rel="icon" type="img/ico" href="/favicon.ico">
   </head>
   
   <body>
